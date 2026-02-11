@@ -11,25 +11,25 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
-  name = "Profile"
-  pageRef = "profile"
-  weight = 10
+name = "Profile"
+pageRef = "/profile/profile"
+weight = 10
 
 [[main]]
-  name = "Projects"
-  weight = 20
+name = "Projects"
+weight = 20
 
 [[main]]
-  name = "Coporate"
-  parent = "Projects"
-  pageRef = "coporate"
-  weight = 20
+name = "Coporate"
+parent = "Projects"
+pageRef = "coporate"
+weight = 20
 
 [[main]]
-  name = "Homelab"
-  parent = "Projects"
-  pageRef = "homelab"
-  weight = 20
+name = "Homelab"
+parent = "Projects"
+pageRef = "/projects/homelab/homelab/"
+weight = 20
 
 #[[main]]
 #  name = "example sub-menu 1"
