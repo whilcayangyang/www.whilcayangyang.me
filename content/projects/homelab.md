@@ -20,9 +20,11 @@ Modern infrastructure should be portable, observable, secure, and automated. Thi
   {{< keyword icon="check" >}}Automation{{< /keyword >}}
 {{< /keywordList >}}
 
+<div class="mt-4">
 {{< alert icon="circle-info" >}}
 **Design Principle:** Treat the homelab like production. Every component is version-controlled, automated where possible, and secured by default.
 {{< /alert >}}
+</div>
 
 ## {{< icon "globe" >}} Architecture Overview
 
@@ -91,7 +93,7 @@ Using SSM instead of public SSH substantially lowers attack surface.
 Cloudflare adds DDoS mitigation, TLS termination, and intelligent edge enforcement.
 {{< /tab >}}
 
-{{< tab label="On-Prem Layer" icon="globe" >}}
+{{< tab label="On-Prem Layer" icon="itch-io" >}}
 ### {{< icon "worktree" >}} Local Infrastructure
 
 Primary node:

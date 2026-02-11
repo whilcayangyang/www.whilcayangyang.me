@@ -6,8 +6,8 @@
     <description>Recent content in Projects on whilcayangyang.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <managingEditor>youremail@example.com (Whil Cayangyang)</managingEditor>
-    <webMaster>youremail@example.com (Whil Cayangyang)</webMaster>
+    <managingEditor>contact@mail.whilcayangyang.me (Whil Cayangyang)</managingEditor>
+    <webMaster>contact@mail.whilcayangyang.me (Whil Cayangyang)</webMaster>
     <copyright>© 2026 Whil Cayangyang</copyright>
     <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
       <title></title>
       <link>http://localhost:1313/projects/corporate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>youremail@example.com (Whil Cayangyang)</author>
+      <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
       <guid>http://localhost:1313/projects/corporate/</guid>
       <description></description>
       
@@ -25,7 +25,7 @@
       <title>Building a Hybrid Homelab</title>
       <link>http://localhost:1313/projects/homelab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>youremail@example.com (Whil Cayangyang)</author>
+      <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
       <guid>http://localhost:1313/projects/homelab/</guid>
       <description></description>
       

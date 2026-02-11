@@ -24,6 +24,7 @@ Core technologies and operational disciplines I use to design, secure, and scale
   {{< keyword icon="microsoft" >}}Linux{{< /keyword >}}
 {{< /keywordList >}}
 
+<div class="mt-4">
 {{< tabs group="technical-excellence" default="Cloud & Infrastructure" >}}
 {{< tab label="Cloud & Infrastructure" icon="cloud" >}}
 | Capability | Level | Focus |
@@ -33,6 +34,7 @@ Core technologies and operational disciplines I use to design, secure, and scale
 | Linux | Advanced | Operating hardened Linux systems for high-availability workloads, performance tuning, and incident recovery. |
 | Observability & Monitoring | Advanced | Building metrics, logs, and traces with proactive alerting, SLO alignment, and root-cause analysis. |
 {{< /tab >}}
+</div>
 
 {{< tab label="DevOps & Automation" icon="code" >}}
 | Capability | Level | Focus |

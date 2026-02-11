@@ -16,10 +16,10 @@ logo = "logo.png"
 
 [params.author]
 name = "Whil Cayangyang"
-email = "youremail@example.com"
+email = "contact@mail.whilcayangyang.me"
 image = "profile-mono.jpg"
 imageQuality = 80
-headline = "DevOps & Cloud Infrastructure Specialist"
+headline = "DevOps, Cloud, and Network engineer building resilient AWS infrastructure through automation, secure networking, and privacy-first design."
 bio = "DevOps, Cloud, and Network engineer building resilient AWS infrastructure through automation, secure networking, and privacy-first design."
 links = [
   { email = "mailto:contact@mail.whilcayangyang.me" },
@@ -35,7 +35,7 @@ links = [
   #     { facebook = "https://facebook.com/username" },
   #     { flickr = "https://www.flickr.com/photos/username/" },
   #     { foursquare = "https://foursquare.com/username" },
-  { github = "https://github.com/username" },
+  { github = "https://github.com/whilcayangyang" },
   #     { gitlab = "https://gitlab.com/username" },
   #     { google = "https://www.google.com/" },
   #     { hashnode = "https://username.hashnode.dev" },
