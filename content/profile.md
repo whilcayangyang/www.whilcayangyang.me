@@ -1,3 +1,58 @@
+---
+title: "Skills & Career Timeline"
+description: "Core technologies and operational disciplines I use to design & A decade of delivering secure, scalable, and business-aligned IT operations across enterprise environment."
+showTableOfContents: false
+draft: false
+---
+
+## Technical Excellence
+
+{{< lead >}}
+Core technologies and operational disciplines I use to design, secure, and scale modern IT environments.
+{{< /lead >}}
+
+{{< badge >}}Cloud, DevOps, Networking, and Security{{< /badge >}}
+
+### Skills & Capability
+
+{{< keywordList >}}
+  {{< keyword icon="cloud" >}}AWS{{< /keyword >}}
+  {{< keyword icon="code" >}}Terraform{{< /keyword >}}
+  {{< keyword icon="github" >}}GitHub Actions{{< /keyword >}}
+  {{< keyword icon="shield" >}}Cybersecurity{{< /keyword >}}
+  {{< keyword icon="globe" >}}Networking{{< /keyword >}}
+  {{< keyword icon="microsoft" >}}Linux{{< /keyword >}}
+{{< /keywordList >}}
+
+{{< tabs group="technical-excellence" default="Cloud & Infrastructure" >}}
+{{< tab label="Cloud & Infrastructure" icon="cloud" >}}
+| Capability | Level | Focus |
+| --- | --- | --- |
+| Amazon AWS | Advanced | Architecting multi-account AWS environments with resilient networking, IAM guardrails, and cost-aware operations. |
+| Containerization | Advanced | Defining production container standards, secure image pipelines, and runtime optimization for dependable delivery. |
+| Linux | Advanced | Operating hardened Linux systems for high-availability workloads, performance tuning, and incident recovery. |
+| Observability & Monitoring | Advanced | Building metrics, logs, and traces with proactive alerting, SLO alignment, and root-cause analysis. |
+{{< /tab >}}
+
+{{< tab label="DevOps & Automation" icon="code" >}}
+| Capability | Level | Focus |
+| --- | --- | --- |
+| GitHub Actions | Advanced | Designing enterprise CI/CD pipelines with reusable workflows, policy gates, and release governance. |
+| Bash Scripting | Expert | Creating robust automation for provisioning, diagnostics, and repeatable operations runbooks. |
+| Ansible | Advanced | Automating baseline configuration, patch orchestration, and compliance drift remediation at scale. |
+| Terraform | Advanced | Delivering modular Infrastructure as Code with remote state strategy, policy controls, and safe change promotion. |
+{{< /tab >}}
+
+{{< tab label="Networking & Security" icon="shield" >}}
+| Capability | Level | Focus |
+| --- | --- | --- |
+| Networking | Expert | Designing segmented, resilient network architectures with routing strategy, firewall policy, and secure remote access. |
+| Cybersecurity | Advanced | Operating defense-in-depth controls with SIEM telemetry, detection engineering, and incident response processes. |
+| Cloudflare | Advanced | Securing edge delivery with Zero Trust access, WAF policy, DNS governance, and performance optimization. |
+| Threat Modeling & Hardening | Advanced | Leading threat modeling and platform hardening initiatives to reduce attack surface and enforce secure baselines. |
+{{< /tab >}}
+{{< /tabs >}}
+
 ## Professional Journey
 
 {{< lead >}}
@@ -38,41 +93,6 @@ A decade of delivering secure, scalable, and business-aligned IT operations acro
 - Provided remote support for complex software issues, reducing end-user downtime.
 - Mitigated cybersecurity risks through remote malware and virus detection, removal, and remediation.
 - Optimized system performance and stability through targeted diagnostics and tuning.
-{{< /timelineItem >}}
-
-{{< /timeline >}}
-
-## Technical Excellence
-
-{{< lead >}}
-Core technologies and operational disciplines I use to design, secure, and scale modern IT environments.
-{{< /lead >}}
-
-{{< badge >}}Cloud, DevOps, Networking, and Security{{< /badge >}}
-
-### Skills & Capability
-
-{{< timeline >}}
-
-{{< timelineItem icon="cloud" header="Cloud & Infrastructure" subheader="AWS, Containers, Linux, Observability" badge="Advanced / Expert" md="true" >}}
-- **Amazon AWS:** Architecting multi-account AWS environments with resilient networking, IAM guardrails, and cost-aware operations.
-- **Containerization:** Defining production container standards, secure image pipelines, and runtime optimization for dependable delivery.
-- **Linux:** Operating hardened Linux systems for high-availability workloads, performance tuning, and incident recovery.
-- **Observability & Monitoring:** Building metrics, logs, and traces with proactive alerting, SLO alignment, and root-cause analysis.
-{{< /timelineItem >}}
-
-{{< timelineItem icon="code" header="DevOps & Automation" subheader="CI/CD, IaC, and Operations Automation" badge="Advanced / Expert" md="true" >}}
-- **GitHub Actions (Advanced):** Designing enterprise CI/CD pipelines with reusable workflows, policy gates, and release governance.
-- **Bash Scripting (Expert):** Creating robust automation for provisioning, diagnostics, and repeatable operations runbooks.
-- **Ansible (Advanced):** Automating baseline configuration, patch orchestration, and compliance drift remediation at scale.
-- **Terraform (Advanced):** Delivering modular Infrastructure as Code with remote state strategy, policy controls, and safe change promotion.
-{{< /timelineItem >}}
-
-{{< timelineItem icon="shield" header="Networking & Security" subheader="Defense-in-Depth and Edge Security" badge="Advanced" md="true" >}}
-- **Networking (Expert):** Designing segmented, resilient network architectures with routing strategy, firewall policy, and secure remote access.
-- **Cybersecurity (Advanced):** Operating defense-in-depth controls with SIEM telemetry, detection engineering, and incident response processes.
-- **Cloudflare (Advanced):** Securing edge delivery with Zero Trust access, WAF policy, DNS governance, and performance optimization.
-- **Threat Modeling & Hardening (Advanced):** Leading threat modeling and platform hardening initiatives to reduce attack surface and enforce secure baselines.
 {{< /timelineItem >}}
 
 {{< /timeline >}}
