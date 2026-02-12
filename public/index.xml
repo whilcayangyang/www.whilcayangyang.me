@@ -13,6 +13,16 @@
     
     <item>
       <title></title>
+      <link>http://localhost:1313/corporate/corporate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
+      <guid>http://localhost:1313/corporate/corporate/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://localhost:1313/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
@@ -22,31 +32,21 @@
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/projects/corporate/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
-      <guid>http://localhost:1313/projects/corporate/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
       <title>Building a Hybrid Homelab</title>
-      <link>http://localhost:1313/projects/homelab/</link>
+      <link>http://localhost:1313/homelab/homelab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
-      <guid>http://localhost:1313/projects/homelab/</guid>
+      <guid>http://localhost:1313/homelab/homelab/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Skills &amp; Career Timeline</title>
-      <link>http://localhost:1313/profile/</link>
+      <link>http://localhost:1313/profile/profile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
-      <guid>http://localhost:1313/profile/</guid>
+      <guid>http://localhost:1313/profile/profile/</guid>
       <description></description>
       
     </item>
