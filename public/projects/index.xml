@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on whilcayangyang.me</title>
-    <link>https://www.whilcayangyang.me/projects/</link>
+    <link>http://localhost:1313/projects/</link>
     <description>Recent content in Projects on whilcayangyang.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>contact@mail.whilcayangyang.me (Whil Cayangyang)</managingEditor>
     <webMaster>contact@mail.whilcayangyang.me (Whil Cayangyang)</webMaster>
     <copyright>© 2026 Whil Cayangyang</copyright>
-    <atom:link href="https://www.whilcayangyang.me/projects/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Citrix ShareFile StorageZone Migration to Dropbox Business</title>
-      <link>https://www.whilcayangyang.me/projects/platform-migration/</link>
+      <link>http://localhost:1313/projects/platform-migration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
-      <guid>https://www.whilcayangyang.me/projects/platform-migration/</guid>
+      <guid>http://localhost:1313/projects/platform-migration/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Scholastic Asia AWS Implementation &amp; Cost Optimization</title>
-      <link>https://www.whilcayangyang.me/projects/aws-cloud/</link>
+      <link>http://localhost:1313/projects/aws-cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
-      <guid>https://www.whilcayangyang.me/projects/aws-cloud/</guid>
+      <guid>http://localhost:1313/projects/aws-cloud/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Scholastic Asia Network Modernization Program</title>
-      <link>https://www.whilcayangyang.me/projects/networking/</link>
+      <link>http://localhost:1313/projects/networking/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
-      <guid>https://www.whilcayangyang.me/projects/networking/</guid>
+      <guid>http://localhost:1313/projects/networking/</guid>
       <description></description>
       
     </item>

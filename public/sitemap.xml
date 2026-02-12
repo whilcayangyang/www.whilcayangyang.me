@@ -3,42 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://www.whilcayangyang.me/privacy/</loc>
+    <loc>http://localhost:1313/privacy/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.whilcayangyang.me/homelab/</loc>
+    <loc>http://localhost:1313/homelab/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.whilcayangyang.me/projects/platform-migration/</loc>
+    <loc>http://localhost:1313/projects/platform-migration/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.whilcayangyang.me/projects/</loc>
+    <loc>http://localhost:1313/projects/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.whilcayangyang.me/projects/aws-cloud/</loc>
+    <loc>http://localhost:1313/projects/aws-cloud/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.whilcayangyang.me/projects/networking/</loc>
+    <loc>http://localhost:1313/projects/networking/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.whilcayangyang.me/profile/</loc>
+    <loc>http://localhost:1313/profile/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.whilcayangyang.me/</loc>
+    <loc>http://localhost:1313/</loc>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
