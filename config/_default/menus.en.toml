@@ -12,24 +12,35 @@
 
 [[main]]
 name = "Profile"
-pageRef = "/profile/profile"
+pageRef = "profile"
 weight = 10
+
+[[main]]
+name = "Homelab"
+pageRef = "homelab"
+weight = 15
 
 [[main]]
 name = "Projects"
 weight = 20
 
 [[main]]
-name = "Coporate"
+name = "AWS Cloud"
 parent = "Projects"
-pageRef = "coporate"
+pageRef = "aws-cloud"
 weight = 20
 
 [[main]]
-name = "Homelab"
+name = "Networking"
 parent = "Projects"
-pageRef = "/projects/homelab/homelab/"
-weight = 20
+pageRef = "networking"
+weight = 25
+
+[[main]]
+name = "Platform Migration"
+parent = "Projects"
+pageRef = "platform-migration"
+weight = 30
 
 #[[main]]
 #  name = "example sub-menu 1"

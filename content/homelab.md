@@ -1,5 +1,5 @@
 ---
-title: "Building a Hybrid Homelab"
+title: "Building an Enterprise-Grade Hybrid Homelab"
 description: "Cloud + on-prem architecture with AWS, Cloudflare, Linux, WireGuard, and infrastructure automation."
 showTableOfContents: false
 draft: false
@@ -8,7 +8,7 @@ draft: false
 ## Cloud + On-Prem Architecture with AWS, Cloudflare, and Linux
 
 {{< lead >}}
-Modern infrastructure should be portable, observable, secure, and automated. This homelab is designed as a production-grade hybrid environment, not just a sandbox.
+Modern infrastructure should be portable, observable, secure, and automated. This homelab is designed as a production-grade hybrid environment, with enterprise-grade cloud architecture powering this platform.
 {{< /lead >}}
 
 {{< keywordList >}}

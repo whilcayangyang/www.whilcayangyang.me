@@ -2,51 +2,71 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>whilcayangyang.me</title>
-    <link>http://localhost:1313/</link>
+    <link>https://www.whilcayangyang.me/</link>
     <description>Recent content on whilcayangyang.me</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>contact@mail.whilcayangyang.me (Whil Cayangyang)</managingEditor>
     <webMaster>contact@mail.whilcayangyang.me (Whil Cayangyang)</webMaster>
     <copyright>© 2026 Whil Cayangyang</copyright>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.whilcayangyang.me/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title></title>
-      <link>http://localhost:1313/corporate/corporate/</link>
+      <link>https://www.whilcayangyang.me/privacy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
-      <guid>http://localhost:1313/corporate/corporate/</guid>
+      <guid>https://www.whilcayangyang.me/privacy/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/privacy/</link>
+      <title>Building an Enterprise-Grade Hybrid Homelab</title>
+      <link>https://www.whilcayangyang.me/homelab/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
-      <guid>http://localhost:1313/privacy/</guid>
+      <guid>https://www.whilcayangyang.me/homelab/</guid>
       <description></description>
       
     </item>
     
     <item>
-      <title>Building a Hybrid Homelab</title>
-      <link>http://localhost:1313/homelab/homelab/</link>
+      <title>Citrix ShareFile StorageZone Migration to Dropbox Business</title>
+      <link>https://www.whilcayangyang.me/projects/platform-migration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
-      <guid>http://localhost:1313/homelab/homelab/</guid>
+      <guid>https://www.whilcayangyang.me/projects/platform-migration/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Scholastic Asia AWS Implementation &amp; Cost Optimization</title>
+      <link>https://www.whilcayangyang.me/projects/aws-cloud/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
+      <guid>https://www.whilcayangyang.me/projects/aws-cloud/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Scholastic Asia Network Modernization Program</title>
+      <link>https://www.whilcayangyang.me/projects/networking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
+      <guid>https://www.whilcayangyang.me/projects/networking/</guid>
       <description></description>
       
     </item>
     
     <item>
       <title>Skills &amp; Career Timeline</title>
-      <link>http://localhost:1313/profile/profile/</link>
+      <link>https://www.whilcayangyang.me/profile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
-      <guid>http://localhost:1313/profile/profile/</guid>
+      <guid>https://www.whilcayangyang.me/profile/</guid>
       <description></description>
       
     </item>
