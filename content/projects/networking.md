@@ -19,9 +19,11 @@ A full-stack enterprise network modernization across five Scholastic Asia locati
   {{< keyword icon="check" >}}Resilience + Segmentation{{< /keyword >}}
 {{< /keywordList >}}
 
+<div class="mt-4">
 {{< alert icon="circle-info" >}}
 **Objective:** Redesign the network architecture across Scholastic Asia from hardware through configuration, increase security posture, centralize visibility, and remove single points of failure.
 {{< /alert >}}
+</div>
 
 ## Regional Scope
 

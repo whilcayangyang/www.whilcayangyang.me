@@ -19,9 +19,11 @@ A full AWS modernization program focused on architecture quality, operational go
   {{< keyword icon="shield" >}}Security Hardening{{< /keyword >}}
 {{< /keywordList >}}
 
+<div class="mt-4">
 {{< alert icon="circle-info" >}}
 **Objective:** Redesign AWS architecture for performance, security, governance, and cost efficiency.
 {{< /alert >}}
+</div>
 
 ## Program Scope
 

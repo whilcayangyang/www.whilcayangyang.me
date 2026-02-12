@@ -8,18 +8,8 @@
     <language>en</language>
     <managingEditor>contact@mail.whilcayangyang.me (Whil Cayangyang)</managingEditor>
     <webMaster>contact@mail.whilcayangyang.me (Whil Cayangyang)</webMaster>
-    <copyright>© 2026 Whil Cayangyang</copyright>
+    <copyright>2026 Whil Cayangyang | Secured by Cloudflare</copyright>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title></title>
-      <link>http://localhost:1313/privacy/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
-      <guid>http://localhost:1313/privacy/</guid>
-      <description></description>
-      
-    </item>
     
     <item>
       <title>Building an Enterprise-Grade Hybrid Homelab</title>
@@ -37,6 +27,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
       <guid>http://localhost:1313/projects/platform-migration/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Privacy Advocacy</title>
+      <link>http://localhost:1313/privacy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>
+      <guid>http://localhost:1313/privacy/</guid>
       <description></description>
       
     </item>
@@ -62,7 +62,7 @@
     </item>
     
     <item>
-      <title>Skills &amp; Career Timeline</title>
+      <title>Technical Excellence &amp; Professional Journey</title>
       <link>http://localhost:1313/profile/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>contact@mail.whilcayangyang.me (Whil Cayangyang)</author>

@@ -19,9 +19,11 @@ An end-to-end server-side migration of a legacy Citrix ShareFile StorageZone env
   {{< keyword icon="shield" >}}Governance-First Cutover{{< /keyword >}}
 {{< /keywordList >}}
 
+<div class="mt-4">
 {{< alert icon="circle-info" >}}
 **Objective:** Lead the full server and infrastructure migration of 88TB from AWS-hosted Citrix ShareFile StorageZone to Dropbox Business with minimal disruption, strong integrity validation, and production-safe execution.
 {{< /alert >}}
+</div>
 
 ## Source Environment and Constraints
 

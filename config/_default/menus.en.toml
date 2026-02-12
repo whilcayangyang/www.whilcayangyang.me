@@ -16,11 +16,6 @@ pageRef = "profile"
 weight = 10
 
 [[main]]
-name = "Homelab"
-pageRef = "homelab"
-weight = 15
-
-[[main]]
 name = "Projects"
 weight = 20
 
@@ -41,6 +36,16 @@ name = "Platform Migration"
 parent = "Projects"
 pageRef = "platform-migration"
 weight = 30
+
+[[main]]
+name = "Homelab"
+pageRef = "homelab"
+weight = 40
+
+[[main]]
+name = "Privacy"
+pageRef = "privacy"
+weight = 50
 
 #[[main]]
 #  name = "example sub-menu 1"
