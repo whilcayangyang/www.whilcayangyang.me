@@ -1,7 +1,7 @@
 ---
 title: "Country Network Modernization Program"
 description: "Cisco and Palo Alto implementation across five Scholastic Asia sites with segmentation, NAC, SIEM integration, and SOC enablement."
-weight: 25
+weight: 21
 showTableOfContents: true
 draft: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Enterprise Security Alignment: CIS Controls v8 Across Asia"
 description: "CIS Controls v8 enforcement across Scholastic Asia covering cloud, network, endpoint, identity, and governance evidence."
-weight: 22
+weight: 23
 showTableOfContents: true
 draft: false
 ---
