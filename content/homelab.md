@@ -1,7 +1,8 @@
 ---
 title: "Building an Enterprise-Grade Hybrid Homelab"
 description: "Cloud + on-prem architecture with AWS, Cloudflare, Linux, WireGuard, and infrastructure automation."
-showTableOfContents: false
+weight: 40
+showTableOfContents: true
 draft: false
 ---
 
@@ -26,7 +27,7 @@ Modern infrastructure should be portable, observable, secure, and automated. Thi
 {{< /alert >}}
 </div>
 
-## {{< icon "globe" >}} Architecture Overview
+## Architecture Overview
 
 The environment combines:
 
@@ -38,11 +39,11 @@ The environment combines:
 
 Everything is tracked in GitHub to keep deployments deterministic and auditable.
 
-## {{< icon "list-check" >}} Platform Breakdown
+## Platform Breakdown
 
 {{< tabs group="homelab-stack" >}}
 {{< tab label="Cloud Layer" icon="cloud" >}}
-### {{< icon "amazon" >}} AWS Infrastructure
+### AWS Infrastructure
 
 All AWS and Cloudflare resources are provisioned through **Terraform** and version-controlled in **GitHub**.
 
@@ -53,7 +54,7 @@ Outcomes:
 - Rapid rebuild capability
 - Reduced configuration drift
 
-### {{< icon "cloud" >}} EC2 Baseline
+### EC2 Baseline
 
 - Hardened EC2 hosts
 - Debian 13
@@ -62,7 +63,7 @@ Outcomes:
 
 Debian is used for long-term stability, minimal overhead, and predictable operations.
 
-### {{< icon "docker" >}} Container Stack
+### Container Stack
 
 - Traefik: Reverse proxy and dynamic routing
 - NGINX: Web serving
@@ -73,7 +74,7 @@ Debian is used for long-term stability, minimal overhead, and predictable operat
 - Portainer: Container lifecycle management
 - Vaultwarden: Self-hosted password manager
 
-### {{< icon "shield" >}} Core AWS Services
+### Core AWS Services
 
 - VPC, Security Groups, and NACLs for segmentation and access control
 - S3 for object storage
@@ -83,7 +84,7 @@ Debian is used for long-term stability, minimal overhead, and predictable operat
 
 Using SSM instead of public SSH substantially lowers attack surface.
 
-### {{< icon "signal" >}} Cloudflare Edge
+### Cloudflare Edge
 
 - Domain and DNS management
 - WAF for Layer 7 protection
@@ -94,7 +95,7 @@ Cloudflare adds DDoS mitigation, TLS termination, and intelligent edge enforceme
 {{< /tab >}}
 
 {{< tab label="On-Prem Layer" icon="itch-io" >}}
-### {{< icon "worktree" >}} Local Infrastructure
+### Local Infrastructure
 
 Primary node:
 
@@ -109,7 +110,7 @@ Primary roles:
 - Secondary service environment
 - Hybrid cloud peer
 
-### {{< icon "docker" >}} On-Prem Container Services
+### On-Prem Container Services
 
 - Traefik (local routing)
 - Beszel agent
@@ -130,7 +131,7 @@ The streaming pipeline is isolated behind Gluetun for safer network boundaries.
 {{< /tab >}}
 
 {{< tab label="Network & Security" icon="shield" >}}
-### {{< icon "globe" >}} Network Core
+### Network Core
 
 MikroTik hAP ax3 responsibilities:
 
@@ -143,7 +144,7 @@ MikroTik hAP ax3 responsibilities:
 
 This enables encrypted site-to-site connectivity (Home <-> AWS) and separate private traffic paths.
 
-### {{< icon "lock" >}} Security Model
+### Security Model
 
 Defense-in-depth controls include:
 
@@ -159,7 +160,7 @@ This mirrors enterprise zero-trust design patterns.
 {{< /tab >}}
 
 {{< tab label="Automation & Ops" icon="code" >}}
-### {{< icon "code" >}} Automation and Lifecycle
+### Automation and Lifecycle
 
 Automation is foundational:
 
@@ -178,7 +179,7 @@ Operational goals:
 {{< /tab >}}
 {{< /tabs >}}
 
-## {{< icon "lightbulb" >}} Why Hybrid?
+## Why Hybrid?
 
 This architecture balances cloud resilience with on-prem control:
 
@@ -188,7 +189,7 @@ This architecture balances cloud resilience with on-prem control:
 - Strong cost efficiency with full data ownership
 - Real-world DevOps practice in a controlled environment
 
-## {{< icon "graduation-cap" >}} Lessons Learned
+## Lessons Learned
 
 1. Treat homelab systems like production from day one.
 2. Keep infrastructure and changes in code.
@@ -197,7 +198,7 @@ This architecture balances cloud resilience with on-prem control:
 5. Automate upgrades, but always monitor outcomes.
 6. Network design and policy matter more than raw compute.
 
-## {{< icon "check" >}} Closing Thoughts
+## Closing Thoughts
 
 This hybrid homelab is a continuously evolving platform for refining cloud engineering and DevOps practices across:
 

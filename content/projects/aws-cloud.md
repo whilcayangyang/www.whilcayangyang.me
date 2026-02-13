@@ -1,6 +1,7 @@
 ---
-title: "Scholastic Asia AWS Implementation & Cost Optimization"
+title: "AWS Implementation & Cost Optimization"
 description: "AWS architecture redesign focused on performance, security, governance, and measurable cost efficiency in 2024."
+weight: 20
 showTableOfContents: true
 draft: false
 ---

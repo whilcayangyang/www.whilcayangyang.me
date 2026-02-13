@@ -1,6 +1,7 @@
 ---
 title: "Privacy Advocacy"
 description: "Why internet privacy matters, and practical steps to protect identity, communication, and digital autonomy."
+weight: 50
 showTableOfContents: true
 draft: false
 ---

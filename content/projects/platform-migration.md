@@ -1,6 +1,7 @@
 ---
 title: "Citrix ShareFile StorageZone Migration to Dropbox Business"
 description: "Enterprise-scale 88TB migration from AWS-hosted Citrix ShareFile StorageZone to Dropbox Business using automation, API integration, and governance-first execution."
+weight: 30
 showTableOfContents: true
 draft: false
 ---
