@@ -20,32 +20,38 @@ name = "Projects"
 weight = 20
 
 [[main]]
-name = "AWS Cloud"
+name = "Cloud Computing"
 parent = "Projects"
 pageRef = "aws-cloud"
-weight = 20
+weight = 21
 
 [[main]]
 name = "Networking"
 parent = "Projects"
 pageRef = "networking"
-weight = 25
+weight = 22
 
 [[main]]
 name = "Platform Migration"
 parent = "Projects"
 pageRef = "platform-migration"
-weight = 30
+weight = 23
+
+[[main]]
+name = "Center for Internet Security (CIS)"
+parent = "Projects"
+pageRef = "cis"
+weight = 24
 
 [[main]]
 name = "Homelab"
 pageRef = "homelab"
-weight = 40
+weight = 30
 
 [[main]]
 name = "Privacy"
 pageRef = "privacy"
-weight = 50
+weight = 40
 
 #[[main]]
 #  name = "example sub-menu 1"
