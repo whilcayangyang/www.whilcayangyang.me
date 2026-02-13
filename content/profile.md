@@ -1,7 +1,7 @@
 ---
 title: "Technical Excellence & Professional Journey"
 description: "Core technologies and operational disciplines I use to design & A decade of delivering secure, scalable, and business-aligned IT operations across enterprise environment."
-showTableOfContents: false
+showTableOfContents: true
 draft: false
 ---
 

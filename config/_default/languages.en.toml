@@ -12,7 +12,7 @@ dateFormat = "2 January 2006"
 logo = "logo.png"
 # secondaryLogo = "img/secondary-logo.png"
 # description = "My awesome website"
-copyright = "2026 Whil Cayangyang | Secured by Cloudflare"
+copyright = "2026 Whil Cayangyang | Secured by Cloudflare | Hosted in AWS"
 
 [params.author]
 name = "Whil Cayangyang"
