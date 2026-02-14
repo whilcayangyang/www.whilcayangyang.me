@@ -48,7 +48,7 @@ git submodule update --init --recursive
 2. Run local dev server:
 
 ```bash
-hugo server -D
+hugo server -disableFastRender --noHTTPCache
 ```
 
 3. Open:
