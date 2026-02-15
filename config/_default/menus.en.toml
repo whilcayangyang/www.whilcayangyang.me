@@ -20,7 +20,7 @@ name = "Projects"
 weight = 20
 
 [[main]]
-name = "Cloud Computing"
+name = "Cloud Optimization"
 parent = "Projects"
 pageRef = "aws-cloud"
 weight = 21
