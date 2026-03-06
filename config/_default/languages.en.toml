@@ -17,8 +17,8 @@ copyright = "2026 Whil Cayangyang | Secured by Cloudflare | Hosted in AWS"
 [params.author]
 name = "Whil Cayangyang"
 email = "contact@mail.whilcayangyang.me"
-image = "profile.jpeg"
-imageQuality = 50
+image = "IMG_2022.JPEG"
+imageQuality = 90
 headline = "DevOps, Cloud, Networking, and Security Engineer building resilient, automated, and zero-trust infrastructure at scale."
 bio = "DevOps, Cloud, Networking, and Security Engineer building resilient, automated, and zero-trust infrastructure at scale."
 links = [
