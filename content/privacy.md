@@ -98,13 +98,57 @@ Internet privacy protects more than personal secrets. It protects control.
 
 The following services align with a privacy-first operating model:
 
-- [Proton](https://pr.tn/ref/F2BW3G4P): Encrypted email, VPN, password management, and secure cloud services.
-- [SimpleLogin](https://simplelogin.io/): Email aliasing to protect your real inbox identity.
-- [Vaultwarden](https://github.com/dani-garcia/vaultwarden): Lightweight self-hosted password manager.
-- [Pi-hole](https://github.com/pi-hole/pi-hole): Network-wide DNS filtering for ads, trackers, and malicious domains.
-- [MikroTik](https://mikrotik.com/): Secure and resilient network infrastructure for home and enterprise edge.
-- [Fedora](https://fedoraproject.org/): Open-source Linux platform with strong security posture.
-- [LibreWolf](https://librewolf.net/): Privacy-focused browser with hardened defaults and reduced telemetry.
+<div style="display: grid; gap: 0.9rem; margin: 1rem 0;">
+  <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
+    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/proton.svg" alt="Proton icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <div>
+      <a href="https://pr.tn/ref/F2BW3G4P" style="font-weight: 600;">Proton</a>
+      <div style="margin-top: 0.15rem;">Encrypted email, VPN, password management, and secure cloud services.</div>
+    </div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
+    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/simplelogin.svg" alt="SimpleLogin icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <div>
+      <a href="https://simplelogin.io/" style="font-weight: 600;">SimpleLogin</a>
+      <div style="margin-top: 0.15rem;">Email aliasing to protect your real inbox identity.</div>
+    </div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
+    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/vaultwarden.svg" alt="Vaultwarden icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <div>
+      <a href="https://github.com/dani-garcia/vaultwarden" style="font-weight: 600;">Vaultwarden</a>
+      <div style="margin-top: 0.15rem;">Lightweight self-hosted password manager.</div>
+    </div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
+    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/pi-hole.svg" alt="Pi-hole icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <div>
+      <a href="https://github.com/pi-hole/pi-hole" style="font-weight: 600;">Pi-hole</a>
+      <div style="margin-top: 0.15rem;">Network-wide DNS filtering for ads, trackers, and malicious domains.</div>
+    </div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
+    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/mikrotik.svg" alt="MikroTik icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <div>
+      <a href="https://mikrotik.com/" style="font-weight: 600;">MikroTik</a>
+      <div style="margin-top: 0.15rem;">Secure and resilient network infrastructure for home and enterprise edge.</div>
+    </div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
+    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/fedora.svg" alt="Fedora icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <div>
+      <a href="https://fedoraproject.org/" style="font-weight: 600;">Fedora</a>
+      <div style="margin-top: 0.15rem;">Open-source Linux platform with strong security posture.</div>
+    </div>
+  </div>
+  <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
+    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/librewolf.svg" alt="LibreWolf icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <div>
+      <a href="https://librewolf.net/" style="font-weight: 600;">LibreWolf</a>
+      <div style="margin-top: 0.15rem;">Privacy-focused browser with hardened defaults and reduced telemetry.</div>
+    </div>
+  </div>
+</div>
 
 ## Privacy Is an Ongoing Practice
 
