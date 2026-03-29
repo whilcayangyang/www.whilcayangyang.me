@@ -9,16 +9,16 @@ draft: false
 ## Cloud + On-Prem Architecture with AWS, Cloudflare, and Linux
 
 {{< lead >}}
-Modern infrastructure should be portable, observable, secure, and automated. This homelab is designed as a production-grade hybrid environment, with enterprise-grade cloud architecture powering this platform.
+Modern infrastructure should be portable, observable, secure, and automated. This homelab is built and operated as a production-grade hybrid environment — a living platform for continuous infrastructure engineering practice.
 {{< /lead >}}
 
 {{< keywordList >}}
-  {{< keyword icon="cloud" >}}AWS + Cloudflare{{< /keyword >}}
-  {{< keyword icon="globe" >}}Hybrid Networking{{< /keyword >}}
-  {{< keyword icon="shield" >}}Zero-Trust Security{{< /keyword >}}
-  {{< keyword icon="code" >}}Infrastructure as Code{{< /keyword >}}
-  {{< keyword icon="eye" >}}Observability{{< /keyword >}}
-  {{< keyword icon="check" >}}Automation{{< /keyword >}}
+{{< keyword icon="cloud" >}} AWS + Cloudflare {{< /keyword >}}
+{{< keyword icon="globe" >}} Hybrid Networking {{< /keyword >}}
+{{< keyword icon="shield" >}} Zero-Trust Security {{< /keyword >}}
+{{< keyword icon="code" >}} Infrastructure as Code {{< /keyword >}}
+{{< keyword icon="eye" >}} Observability {{< /keyword >}}
+{{< keyword icon="cog" >}} Automation {{< /keyword >}}
 {{< /keywordList >}}
 
 <div class="mt-4">
@@ -27,186 +27,195 @@ Modern infrastructure should be portable, observable, secure, and automated. Thi
 {{< /alert >}}
 </div>
 
+---
+
 ## Architecture Overview
 
-The environment combines:
+This environment is structured as a unified hybrid platform — not a loose collection of services, but a deliberately engineered system where every layer has a clear role.
 
-- Cloud Layer: AWS + Cloudflare for internet-facing services
-- On-Prem Layer: Beelink server + MikroTik router for local workloads
-- Secure Interconnect: WireGuard tunnels between home and cloud
-- Platform Model: Docker workloads managed and monitored continuously
-- Infrastructure Delivery: Terraform + GitHub for reproducible provisioning
+- **Cloud Layer:** AWS + Cloudflare for internet-facing services and edge enforcement
+- **On-Prem Layer:** Beelink server + MikroTik router for local workloads and private services
+- **Secure Interconnect:** WireGuard encrypted tunnels bridging home and cloud
+- **Platform Model:** Docker-based workloads managed and monitored continuously
+- **Infrastructure Delivery:** Terraform + GitHub for reproducible, auditable provisioning
 
-Everything is tracked in GitHub to keep deployments deterministic and auditable.
+All infrastructure changes flow through GitHub, making every deployment deterministic and traceable.
+
+---
 
 ## Platform Breakdown
 
 {{< tabs group="homelab-stack" >}}
+
 {{< tab label="Cloud Layer" icon="cloud" >}}
-### AWS Infrastructure
 
-All AWS and Cloudflare resources are provisioned through **Terraform** and version-controlled in **GitHub**.
+**AWS Infrastructure**
 
-Outcomes:
+All AWS and Cloudflare resources are provisioned through **Terraform** and version-controlled in **GitHub** — no manual console changes, no configuration drift.
 
-- Deterministic deployments
-- Full infrastructure traceability
-- Rapid rebuild capability
-- Reduced configuration drift
+Benefits of this approach:
+- Deterministic deployments across rebuilds
+- Full infrastructure traceability through git history
+- Rapid recovery capability from a clean state
+- Consistent environments that behave the same every time
 
-### EC2 Baseline
+**EC2 Baseline**
 
-- Hardened EC2 hosts
-- Debian 13
-- Docker runtime
-- WireGuard peer to on-prem network
+- Hardened EC2 hosts running Debian 13
+- Docker runtime for containerized workloads
+- WireGuard peer maintaining the encrypted tunnel to on-prem
 
-Debian is used for long-term stability, minimal overhead, and predictable operations.
+Debian is chosen for long-term stability, minimal overhead, and predictable release behaviour.
 
-### Container Stack
+**Container Stack**
 
-- Traefik: Reverse proxy and dynamic routing
-- NGINX: Web serving
-- Gatus: Availability monitoring
-- Beszel: System monitoring
-- Duin: Automated container upgrades
-- Pi-hole: DNS filtering
-- Portainer: Container lifecycle management
-- Vaultwarden: Self-hosted password manager
+- **Traefik** — reverse proxy and dynamic routing
+- **NGINX** — web serving
+- **Gatus** — availability monitoring and uptime checks
+- **Beszel** — host and service metrics
+- **Duin** — automated container image upgrades
+- **Pi-hole** — DNS-level filtering and ad blocking
+- **Portainer** — container lifecycle management
+- **Vaultwarden** — self-hosted password manager
 
-### Core AWS Services
+**Core AWS Services**
 
-- VPC, Security Groups, and NACLs for segmentation and access control
+- VPC, Security Groups, and NACLs for network segmentation and access control
 - S3 for object storage
 - SES for transactional email notifications
-- IAM for role-based access control
-- SSM for secure remote administration without exposing SSH
+- IAM with least-privilege role-based access
+- SSM for secure remote administration — no exposed SSH ports
 
-Using SSM instead of public SSH substantially lowers attack surface.
+**Cloudflare Edge**
 
-### Cloudflare Edge
+- Domain and DNS management with full zone control
+- WAF for Layer 7 threat protection
+- CDN for low-latency global delivery
+- Workers for lightweight edge logic and routing
 
-- Domain and DNS management
-- WAF for Layer 7 protection
-- CDN for low-latency delivery
-- Workers for lightweight edge logic
+Cloudflare adds DDoS mitigation, TLS termination, and intelligent edge enforcement in front of all public-facing services.
 
-Cloudflare adds DDoS mitigation, TLS termination, and intelligent edge enforcement.
 {{< /tab >}}
 
-{{< tab label="On-Prem Layer" icon="itch-io" >}}
-### Local Infrastructure
+{{< tab label="On-Prem Layer" icon="server" >}}
 
-Primary node:
+**Local Infrastructure**
 
-- Beelink SER8
-- Debian 13
-- Docker runtime
+Primary node: **Beelink SER8** running Debian 13 with Docker runtime.
 
 Primary roles:
+- Media and entertainment services
+- Local automation hub and scheduling
+- Secondary service environment for private workloads
+- Hybrid cloud peer via WireGuard
 
-- Media services
-- Local automation hub
-- Secondary service environment
-- Hybrid cloud peer
+**On-Prem Container Services**
 
-### On-Prem Container Services
-
-- Traefik (local routing)
-- Beszel agent
-- Duin (automated upgrades)
-- Portainer
+Core infrastructure:
+- Traefik (local routing and reverse proxy)
+- Beszel agent (metrics forwarded to cloud dashboard)
+- Duin (automated container upgrades)
+- Portainer (container lifecycle management)
 
 Streaming stack:
+- **Jellyfin** — self-hosted media server
+- **Bazarr** — subtitle management
+- **Prowlarr** — indexer aggregation
+- **Radarr** — media library automation
+- **qBittorrent** — download client
+- **Gluetun** — VPN container for network isolation
+- **PairDrop** — local wireless file sharing
 
-- Jellyfin
-- Bazarr
-- Prowlarr
-- Radarr
-- qBittorrent
-- Gluetun (VPN isolation)
-- PairDrop (local file sharing)
+The streaming pipeline is routed behind Gluetun, isolating download traffic from the trusted local network and enforcing separate traffic paths.
 
-The streaming pipeline is isolated behind Gluetun for safer network boundaries.
 {{< /tab >}}
 
 {{< tab label="Network & Security" icon="shield" >}}
-### Network Core
 
-MikroTik hAP ax3 responsibilities:
+**Network Core**
 
-- Routing and segmentation
-- Stateful firewall policy
-- DHCP services
-- Secure Wi-Fi (WPA Enterprise / EAP)
-- WireGuard peer to AWS
-- Separate WireGuard tunnel to ProtonVPN
+The **MikroTik hAP ax3** handles all routing, segmentation, and access control responsibilities:
 
-This enables encrypted site-to-site connectivity (Home <-> AWS) and separate private traffic paths.
+- Routing and VLAN-based segmentation
+- Stateful firewall policy enforcement
+- DHCP services across network segments
+- Secure Wi-Fi using WPA Enterprise / EAP
+- WireGuard peer tunnelling to AWS for site-to-site connectivity
+- Separate WireGuard tunnel to ProtonVPN for isolated private traffic paths
 
-### Security Model
+This enables encrypted connectivity between home and cloud (Home ↔ AWS) while maintaining independent traffic routing for sensitive workloads.
 
-Defense-in-depth controls include:
+**Security Model**
 
-- No exposed SSH in AWS (SSM-first administration)
-- WireGuard encrypted tunnels
-- Strict security groups and firewall rules
-- Cloudflare WAF for public services
-- Least-privilege IAM roles
-- VPN isolation for torrent workloads
-- DNS filtering with Pi-hole
+Defense-in-depth controls applied across every layer:
 
-This mirrors enterprise zero-trust design patterns.
+- No SSH exposed in AWS — SSM-first remote administration only
+- WireGuard encrypted tunnels for all inter-site traffic
+- Strict security groups and stateful firewall rules
+- Cloudflare WAF protecting all public-facing services
+- Least-privilege IAM roles — no broad or shared permissions
+- VPN container isolation for torrent and download workloads
+- Pi-hole DNS filtering blocking ads, trackers, and malicious domains
+
+This mirrors the zero-trust security design patterns applied in enterprise environments.
+
 {{< /tab >}}
 
 {{< tab label="Automation & Ops" icon="code" >}}
-### Automation and Lifecycle
 
-Automation is foundational:
+**Automation and Lifecycle**
 
-- Terraform provisions infrastructure
-- Duin handles container update flows
-- Gatus validates service availability
-- Beszel collects host and service metrics
-- GitHub tracks changes and enables future CI/CD extensions
+Automation is foundational to how this platform operates — not an afterthought added later.
 
-Operational goals:
+- **Terraform** provisions all cloud infrastructure from code
+- **Duin** automates container image update flows
+- **Gatus** validates service availability with uptime checks and alerting
+- **Beszel** collects continuous host and service metrics
+- **GitHub** tracks all infrastructure changes and enables future CI/CD extension
 
-- Detect failures quickly
-- Self-recover where appropriate
-- Alert when manual intervention is required
-- Preserve reproducibility across environments
+**Operational Goals**
+
+The platform is designed to:
+- Detect failures quickly through monitoring and alerting
+- Self-recover where automation can handle it
+- Alert clearly when manual intervention is required
+- Preserve full reproducibility — any component can be rebuilt from code
+
+The objective is not automation for its own sake. The objective is reducing toil, catching failures early, and maintaining operational clarity.
+
 {{< /tab >}}
+
 {{< /tabs >}}
+
+---
 
 ## Why Hybrid?
 
-This architecture balances cloud resilience with on-prem control:
+A pure cloud or pure on-prem approach would compromise either cost, control, or resilience. The hybrid model delivers all three:
 
-- Cloud for public exposure and elastic scaling
-- On-prem for private services and experimentation
-- WireGuard for secure, unified networking
-- Strong cost efficiency with full data ownership
-- Real-world DevOps practice in a controlled environment
+- **Cloud** for internet-facing exposure, edge security, and elastic capability
+- **On-prem** for private services, media workloads, and experimentation without cloud egress costs
+- **WireGuard** for secure, unified networking that makes both layers behave as one
+- **Full data ownership** with strong cost efficiency at scale
+- **Real-world DevOps practice** in a controlled environment that mirrors enterprise architecture
 
-## Lessons Learned
+---
 
-1. Treat homelab systems like production from day one.
-2. Keep infrastructure and changes in code.
-3. Do not expose services unless there is a clear need.
-4. Build observability into the first version, not as an afterthought.
-5. Automate upgrades, but always monitor outcomes.
-6. Network design and policy matter more than raw compute.
+## Lessons Applied
+
+These principles emerged from operating this platform under real conditions — not from theory:
+
+1. **Treat homelab systems like production from day one** — bad habits compound over time.
+2. **Keep all infrastructure and changes in code** — memory and documentation both fail. Git doesn't.
+3. **Do not expose services unless there is a clear, justified need** — default to closed.
+4. **Build observability into the first version** — retrofitting monitoring is always harder and less complete.
+5. **Automate upgrades, but always monitor outcomes** — automation without visibility is just faster failure.
+6. **Network design and access policy matter more than raw compute** — segmentation prevents lateral movement.
+
+---
 
 ## Closing Thoughts
 
-This hybrid homelab is a continuously evolving platform for refining cloud engineering and DevOps practices across:
+This hybrid homelab is a continuously evolving engineering platform — not a static setup. It is where infrastructure as code, secure networking, containerized workloads, edge security controls, and automated operations are refined through real operational pressure.
 
-- Infrastructure as Code
-- Secure networking
-- Containerized workloads
-- Edge security controls
-- Monitoring and observability
-- Automated operations
-
-The objective is not complexity. The objective is clarity, resilience, and control.
+The objective is not complexity. The objective is **clarity, resilience, and control**.

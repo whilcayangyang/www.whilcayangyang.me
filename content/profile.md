@@ -1,101 +1,116 @@
 ---
 title: "Technical Excellence & Professional Journey"
-description: "Core technologies and operational disciplines I use to design & A decade of delivering secure, scalable, and business-aligned IT operations across enterprise environment."
+description: "Core technologies and operational disciplines behind a decade of delivering secure, scalable, and business-aligned IT operations across enterprise environments."
 weight: 10
 showTableOfContents: true
 draft: false
 ---
 
-## Technical Excellence
-
 {{< lead >}}
-Core technologies and operational disciplines I use to design, secure, and scale modern IT environments.
+A decade of enterprise infrastructure delivery — from field engineering to regional cloud and security leadership — built on a foundation of precision, governance, and outcomes that last.
 {{< /lead >}}
 
-{{< badge >}}Cloud, DevOps, Networking, and Security{{< /badge >}}
+---
 
-### Skills & Capability
+## Technical Excellence
+
+The disciplines below represent areas where I have delivered real outcomes in production environments — not certifications on paper, but capabilities applied under operational pressure across multi-site, multi-country enterprise infrastructure.
 
 {{< keywordList >}}
-  {{< keyword icon="cloud" >}}AWS{{< /keyword >}}
-  {{< keyword icon="code" >}}Terraform{{< /keyword >}}
-  {{< keyword icon="github" >}}GitHub Actions{{< /keyword >}}
-  {{< keyword icon="shield" >}}Cybersecurity{{< /keyword >}}
-  {{< keyword icon="globe" >}}Networking{{< /keyword >}}
-  {{< keyword icon="microsoft" >}}Linux{{< /keyword >}}
+{{< keyword icon="cloud" >}} AWS {{< /keyword >}}
+{{< keyword icon="code" >}} Terraform {{< /keyword >}}
+{{< keyword icon="github" >}} GitHub Actions {{< /keyword >}}
+{{< keyword icon="shield" >}} Cybersecurity {{< /keyword >}}
+{{< keyword icon="globe" >}} Networking {{< /keyword >}}
+{{< keyword icon="server" >}} Linux {{< /keyword >}}
 {{< /keywordList >}}
 
-<div class="mt-4">
-{{< tabs group="technical-excellence" default="Cloud & Infrastructure" >}}
+{{< tabs group="technical-excellence" >}}
+
 {{< tab label="Cloud & Infrastructure" icon="cloud" >}}
-| Capability | Level | Focus |
+
+| Capability | Depth | How I Apply It |
 | --- | --- | --- |
-| Amazon AWS | Advanced | Architecting multi-account AWS environments with resilient networking, IAM guardrails, and cost-aware operations. |
-| Containerization | Advanced | Defining production container standards, secure image pipelines, and runtime optimization for dependable delivery. |
-| Linux | Advanced | Operating hardened Linux systems for high-availability workloads, performance tuning, and incident recovery. |
-| Observability & Monitoring | Advanced | Building metrics, logs, and traces with proactive alerting, SLO alignment, and root-cause analysis. |
+| Amazon AWS | Advanced | Architecting multi-account environments with resilient networking, least-privilege IAM, and cost-managed operations at scale. |
+| Containerization | Advanced | Defining production container standards, securing image delivery pipelines, and optimizing runtime performance for reliable workloads. |
+| Linux | Advanced | Operating hardened Linux systems for high-availability workloads, performance tuning under load, and structured incident recovery. |
+| Observability & Monitoring | Advanced | Building metrics, log, and trace pipelines with proactive alerting, SLO alignment, and root-cause analysis capability. |
+
 {{< /tab >}}
-</div>
 
 {{< tab label="DevOps & Automation" icon="code" >}}
-| Capability | Level | Focus |
+
+| Capability | Depth | How I Apply It |
 | --- | --- | --- |
-| GitHub Actions | Advanced | Designing enterprise CI/CD pipelines with reusable workflows, policy gates, and release governance. |
-| Bash Scripting | Expert | Creating robust automation for provisioning, diagnostics, and repeatable operations runbooks. |
-| Ansible | Advanced | Automating baseline configuration, patch orchestration, and compliance drift remediation at scale. |
-| Terraform | Advanced | Delivering modular Infrastructure as Code with remote state strategy, policy controls, and safe change promotion. |
+| Terraform | Advanced | Delivering modular, policy-controlled Infrastructure as Code with remote state strategy and safe, auditable change promotion. |
+| GitHub Actions | Advanced | Designing enterprise CI/CD pipelines with reusable workflows, approval gates, and release governance built in from the start. |
+| Ansible | Advanced | Automating baseline configuration, patch orchestration, and compliance drift remediation across large fleet environments. |
+| Bash Scripting | Expert | Building robust automation for provisioning, operational diagnostics, and repeatable runbooks that reduce human error. |
+
 {{< /tab >}}
 
 {{< tab label="Networking & Security" icon="shield" >}}
-| Capability | Level | Focus |
+
+| Capability | Depth | How I Apply It |
 | --- | --- | --- |
-| Networking | Expert | Designing segmented, resilient network architectures with routing strategy, firewall policy, and secure remote access. |
-| Cybersecurity | Advanced | Operating defense-in-depth controls with SIEM telemetry, detection engineering, and incident response processes. |
-| Cloudflare | Advanced | Securing edge delivery with Zero Trust access, WAF policy, DNS governance, and performance optimization. |
-| Threat Modeling & Hardening | Advanced | Leading threat modeling and platform hardening initiatives to reduce attack surface and enforce secure baselines. |
+| Networking | Expert | Designing segmented, redundant network architectures with structured routing, firewall policy enforcement, and secure remote access. |
+| Cybersecurity | Advanced | Operating defense-in-depth controls with SIEM telemetry, detection engineering, and documented incident response processes. |
+| Cloudflare | Advanced | Securing edge delivery with Zero Trust access policies, WAF rule management, DNS governance, and performance optimization. |
+| Threat Modeling & Hardening | Advanced | Leading threat modeling sessions and platform hardening programs to reduce attack surface and enforce measurable secure baselines. |
+
 {{< /tab >}}
+
 {{< /tabs >}}
+
+---
 
 ## Professional Journey
 
 {{< lead >}}
-A decade of delivering secure, scalable, and business-aligned IT operations across enterprise publishing, media, and field engineering environments.
+Each role below built on the last — from hands-on field engineering to enterprise-scale infrastructure leadership across cloud, networking, and security.
 {{< /lead >}}
-
-{{< badge >}}10+ Years in IT Operations & Infrastructure{{< /badge >}}
-
-### Career Timeline
 
 {{< timeline >}}
 
-{{< timelineItem icon="cloud" header="Senior IT Officer" subheader="Scholastic Asia" badge="2021 - Present" md="true" >}}
-- Oversee the full lifecycle of IT infrastructure, including cloud architecture, implementation, and ongoing maintenance.
-- Ensure platforms remain secure, reliable, and scalable to support both current and future business requirements.
-- Lead major IT initiatives, including upgrades and infrastructure migrations, with on-time and on-budget delivery.
+{{< timelineItem icon="cloud" header="Senior IT Officer" subheader="Scholastic Asia" badge="2021 – Present" md="true" >}}
+Leading regional IT infrastructure across five Asia-Pacific markets, with accountability for cloud architecture, security posture, and operational continuity at enterprise scale.
+
+- Architect and maintain AWS environments with security, resilience, and cost governance as core design principles.
+- Direct cross-country network modernization, firewall migration, and SOC enablement programs.
+- Drive CIS Controls v8 enforcement and deliver audit-ready compliance evidence for US InfoSEC validation.
+- Lead major migrations and infrastructure transitions under active production load with zero service impact.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="eye" header="IT Manager / System Integrator" subheader="PilotTV Philippines" badge="2019 - 2021" md="true" >}}
-- Developed and executed long-term IT strategy by assessing infrastructure maturity and planning future-state capabilities.
-- Integrated disparate systems and applications into a unified, interoperable technology environment.
-- Managed end-to-end system integration projects from requirements analysis and solution design through implementation.
+{{< timelineItem icon="eye" header="IT Manager / System Integrator" subheader="PilotTV Philippines" badge="2019 – 2021" md="true" >}}
+Shaped long-term IT strategy and unified a fragmented technology environment into a coherent, interoperable platform aligned to business operations.
+
+- Assessed infrastructure maturity and planned future-state capabilities across the organization.
+- Integrated disparate systems and applications to eliminate operational silos and improve reliability.
+- Managed end-to-end integration projects from requirements through delivery, on scope and on schedule.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="list-check" header="IT Specialist" subheader="FocusMedia Audiovisual Inc." badge="2016 - 2019" md="true" >}}
-- Delivered technical support across hardware and software installation, configuration, and troubleshooting.
-- Maintained IT asset documentation and administered full user account lifecycle controls aligned with security policy.
-- Managed software rollouts and system updates to sustain endpoint performance and operational consistency.
+{{< timelineItem icon="list-check" header="IT Specialist" subheader="FocusMedia Audiovisual Inc." badge="2016 – 2019" md="true" >}}
+Owned day-to-day IT operations, maintaining endpoint performance, security compliance, and user account governance across the organization.
+
+- Delivered technical support across hardware and software installation, configuration, and fault resolution.
+- Administered user account lifecycle controls aligned with security policy and access governance standards.
+- Managed software rollouts and system updates to sustain endpoint consistency and operational uptime.
 {{< /timelineItem >}}
 
-{{< timelineItem icon="globe" header="IT Field Engineer" subheader="eMechanics Computer & Peripherals Inc." badge="2014 - 2016" md="true" >}}
-- Performed on-site installation, configuration, and network integration for mission-critical ATM and POS platforms.
-- Executed preventive maintenance and system updates to maximize uptime and service reliability.
-- Coordinated with technical teams to prioritize field incidents and ensure timely resolution.
+{{< timelineItem icon="globe" header="IT Field Engineer" subheader="eMechanics Computer & Peripherals Inc." badge="2014 – 2016" md="true" >}}
+Delivered on-site technical execution for mission-critical deployments across financial services infrastructure, where precision and uptime were non-negotiable.
+
+- Installed, configured, and network-integrated ATM and POS platforms at client sites nationwide.
+- Executed preventive maintenance and system updates to maximize reliability and minimize service disruption.
+- Coordinated with technical teams to triage and resolve field incidents within SLA windows.
 {{< /timelineItem >}}
 
 {{< timelineItem icon="microsoft" header="Remote Desktop Specialist" subheader="Accenture" badge="2013" md="true" >}}
-- Provided remote support for complex software issues, reducing end-user downtime.
-- Mitigated cybersecurity risks through remote malware and virus detection, removal, and remediation.
-- Optimized system performance and stability through targeted diagnostics and tuning.
+Provided enterprise-grade remote technical support, building early foundations in structured problem-solving, security response, and end-user communication under pressure.
+
+- Resolved complex software issues remotely, reducing end-user downtime and escalation rates.
+- Detected, removed, and remediated malware and cybersecurity threats across managed endpoints.
+- Optimized system performance and stability through targeted diagnostics and tuning protocols.
 {{< /timelineItem >}}
 
 {{< /timeline >}}
