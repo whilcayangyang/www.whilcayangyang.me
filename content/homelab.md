@@ -70,7 +70,7 @@ Debian is chosen for long-term stability, minimal overhead, and predictable rele
 **Container Stack**
 
 - **Traefik** — reverse proxy and dynamic routing
-- **NGINX** — web serving
+- **Caddy** — web serving
 - **Gatus** — availability monitoring and uptime checks
 - **Beszel** — host and service metrics
 - **Duin** — automated container image upgrades

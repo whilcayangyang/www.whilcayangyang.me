@@ -1,6 +1,6 @@
 ---
 title: "AWS Implementation & Cost Optimization"
-description: "AWS architecture redesign focused on performance, security, governance, and measurable cost efficiency in 2024."
+description: "AWS architecture redesign focused on performance, security, governance, and measurable cost efficiency."
 weight: 20
 showTableOfContents: true
 draft: false
