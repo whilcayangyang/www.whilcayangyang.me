@@ -6,7 +6,7 @@ showTableOfContents: true
 draft: false
 ---
 
-## Scholastic Asia AWS Implementation & Cost Optimization (2024)
+## Scholastic Asia AWS Implementation & Cost Optimization
 
 {{< lead >}}
 A full AWS modernization program that moved the environment from reactive, ad-hoc cloud operations to structured, policy-driven infrastructure — with stronger security, lower costs, and auditable governance at every layer.
@@ -36,7 +36,7 @@ This initiative modernized cloud foundations across networking architecture, pro
 
 ## Modernization Workstreams
 
-{{< tabs group="scholastic-aws-2024" >}}
+{{< tabs group="scholastic-aws" >}}
 
 {{< tab label="VPC Redesign" icon="globe" >}}
 
