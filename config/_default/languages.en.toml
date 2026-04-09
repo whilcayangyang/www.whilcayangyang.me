@@ -12,7 +12,7 @@ dateFormat = "2 January 2006"
 logo = "logo.png"
 # secondaryLogo = "img/secondary-logo.png"
 description = "DevOps, Cloud, Networking, and Security Engineer building resilient, automated, and zero-trust infrastructure at scale."
-copyright = "2026 Whil Cayangyang | Secured by Cloudflare | Hosted in AWS"
+copyright = "2026 Whil Cayangyang | Secured by Cloudflare"
 
 [params.author]
 name = "Whil Cayangyang"
