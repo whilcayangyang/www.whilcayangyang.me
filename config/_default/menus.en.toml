@@ -44,7 +44,7 @@ pageRef = "cis"
 weight = 24
 
 [[main]]
-name = "Homelab"
+name = "K8 Homelab"
 pageRef = "homelab"
 weight = 30
 
