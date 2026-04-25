@@ -23,6 +23,8 @@ A single-node k3s cluster engineered with the same operational rigour as product
 
 {{< figure src="dashboard.png" alt="Homelab dashboard showing infrastructure, networking, and application services" >}}
 
+{{< figure src="k9s.png" alt="k9s terminal UI showing Kubernetes pods across all namespaces" >}}
+
 <div class="mt-4">
 {{< alert icon="circle-info" >}}
 **Design Principle:** Every component runs in a dedicated namespace with least-privilege access. Infrastructure state lives in Git — no manual cluster changes.
