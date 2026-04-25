@@ -21,6 +21,8 @@ A single-node k3s cluster engineered with the same operational rigour as product
 {{< keyword icon="code" >}} GitOps {{< /keyword >}}
 {{< /keywordList >}}
 
+{{< figure src="dashboard.png" alt="Homelab dashboard showing infrastructure, networking, and application services" >}}
+
 <div class="mt-4">
 {{< alert icon="circle-info" >}}
 **Design Principle:** Every component runs in a dedicated namespace with least-privilege access. Infrastructure state lives in Git — no manual cluster changes.
