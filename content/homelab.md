@@ -44,6 +44,7 @@ The cluster runs on bare-metal on-prem hardware with k3s as the Kubernetes distr
 | File sharing | Pairdrop | `pairdrop` |
 | Password manager | Vaultwarden + PostgreSQL | `vaultwarden` |
 | Dev environment | code-server | `code-server` |
+| Home dashboard | Homepage | `homepage` |
 | Infra dashboard | Portainer | `portainer` |
 | Static site | Caddy | `caddy` |
 | Public tunnel | cloudflared | `cloudflared` |
@@ -102,6 +103,10 @@ Vaultwarden runs in the `vaultwarden` namespace backed by a PostgreSQL instance 
 **Dev Environment — code-server**
 
 code-server (`code-server` namespace) exposes VS Code as a web application. Uses a relaxed CSP/frame policy via a dedicated Traefik middleware (`code-server-headers@file`) to allow the VS Code web UI to function correctly.
+
+**Home Dashboard — Homepage**
+
+Homepage (`homepage` namespace) serves as the service launcher — a configurable start page with widgets for each self-hosted service and a live Kubernetes cluster widget showing pod/node status.
 
 **Infra Dashboard — Portainer**
 
