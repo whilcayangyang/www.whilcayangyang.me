@@ -52,6 +52,7 @@ The cluster runs on bare-metal on-prem hardware with k3s as the Kubernetes distr
 | Infra dashboard | Portainer | `portainer` |
 | Static site | Caddy | `caddy` |
 | Public tunnel | cloudflared | `cloudflared` |
+| Security scanning | Trivy Operator | `trivy-system` |
 | Metrics | Prometheus | `monitoring` |
 | Dashboards | Grafana | `monitoring` |
 | Log aggregation | Loki (single-binary) | `monitoring` |
@@ -123,6 +124,19 @@ Caddy (`caddy` namespace) serves the static site. Sits behind Traefik for TLS te
 {{< /tab >}}
 
 {{< tab label="Security" icon="shield" >}}
+
+**Security Scanning — Trivy Operator**
+
+Trivy Operator runs in the `trivy-system` namespace and provides continuous in-cluster scanning across four domains:
+
+| Scan type | What it covers |
+|---|---|
+| Vulnerability | Container image CVEs against upstream advisory DBs |
+| Config audit | Kubernetes manifest misconfigurations (e.g. privileged containers, missing resource limits) |
+| RBAC assessment | Overly permissive roles and bindings across namespaces |
+| Secret scanning | Hardcoded credentials and tokens in workload specs |
+
+Results are surfaced as Kubernetes CRDs (`VulnerabilityReport`, `ConfigAuditReport`, `RbacAssessmentReport`, `ExposedSecretReport`) and exposed as Prometheus metrics — scraped by the existing Prometheus instance in `monitoring` and visible in Grafana.
 
 **Traefik Middleware Chain**
 
