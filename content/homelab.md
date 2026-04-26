@@ -1,24 +1,24 @@
 ---
 title: "On-Prem Kubernetes Homelab"
-description: "Production-grade k3s cluster running self-hosted services with Traefik, cert-manager, sealed-secrets, and a full observability stack."
+description: "GitOps-driven k3s cluster: Flux reconciles all state from Git, Renovate automates dependency PRs, with sealed secrets, wildcard TLS, and a full Prometheus/Loki/Grafana observability stack."
 weight: 40
 showTableOfContents: true
 draft: false
 ---
 
-## K3s On-Prem — Single-Node, Production Discipline
+## K3s On-Prem — GitOps, Production Discipline
 
 {{< lead >}}
-A single-node k3s cluster engineered with the same operational rigour as production: sealed secrets, wildcard TLS automation, middleware-enforced security headers, and a unified Prometheus/Loki/Grafana observability stack.
+A single-node k3s cluster run as a GitOps platform: Flux continuously reconciles cluster state from Git, Renovate automatically opens PRs when images or Helm charts have newer versions, and no manual `kubectl apply` ever touches production. Sealed secrets, wildcard TLS automation, middleware-enforced security headers, and a unified Prometheus/Loki/Grafana observability stack complete the picture.
 {{< /lead >}}
 
 {{< keywordList >}}
+{{< keyword icon="code" >}} GitOps — Flux CD {{< /keyword >}}
 {{< keyword icon="server" >}} k3s / Kubernetes {{< /keyword >}}
 {{< keyword icon="shield" >}} Sealed Secrets + TLS {{< /keyword >}}
 {{< keyword icon="globe" >}} Traefik Ingress {{< /keyword >}}
 {{< keyword icon="eye" >}} Prometheus + Loki {{< /keyword >}}
 {{< keyword icon="cloud" >}} Cloudflare Tunnel {{< /keyword >}}
-{{< keyword icon="code" >}} GitOps {{< /keyword >}}
 {{< /keywordList >}}
 
 {{< figure src="dashboard.png" alt="Homelab dashboard showing infrastructure, networking, and application services" >}}
@@ -27,7 +27,7 @@ A single-node k3s cluster engineered with the same operational rigour as product
 
 <div class="mt-4">
 {{< alert icon="circle-info" >}}
-**Design Principle:** Every component runs in a dedicated namespace with least-privilege access. Infrastructure state lives in Git — no manual cluster changes.
+**Design Principle:** The Git repository is the single source of truth. Flux enforces it. No manual cluster changes — if it isn't in Git, it doesn't exist in the cluster.
 {{< /alert >}}
 </div>
 
@@ -35,10 +35,12 @@ A single-node k3s cluster engineered with the same operational rigour as product
 
 ## Architecture Overview
 
-The cluster runs on bare-metal on-prem hardware with k3s as the Kubernetes distribution. All service exposure is handled by Traefik as the single ingress point. Cloudflare Tunnel (`cloudflared`) provides public reachability without opening inbound firewall ports.
+The cluster runs on bare-metal on-prem hardware with k3s as the Kubernetes distribution. Flux (`flux-system`) watches the Git repository and reconciles every manifest, Helm release, and Kustomization automatically. All service exposure is handled by Traefik as the single ingress point. Cloudflare Tunnel (`cloudflared`) provides public reachability without opening inbound firewall ports.
 
 | Layer | Component | Namespace |
 |---|---|---|
+| **GitOps controller** | **Flux CD** | **`flux-system`** |
+| **Dependency automation** | **Renovate** | *(external — PR bot)* |
 | Secret encryption | sealed-secrets | `kube-system` |
 | TLS issuance | cert-manager | `cert-manager` |
 | TLS distribution | reflector | `kube-system` |
@@ -64,6 +66,45 @@ The cluster runs on bare-metal on-prem hardware with k3s as the Kubernetes distr
 ## Platform Breakdown
 
 {{< tabs group="homelab-stack" >}}
+
+{{< tab label="GitOps" icon="code" >}}
+
+**Flux CD — Continuous Reconciliation**
+
+[Flux](https://fluxcd.io/) runs in the `flux-system` namespace and is the operational core of the cluster. It watches the Git repository for changes and continuously reconciles the actual cluster state against the declared state. Every manifest, Helm release, and Kustomization layer is managed through Flux — not applied manually.
+
+The reconciliation loop means configuration drift is impossible to sustain: any manual `kubectl apply` or in-cluster edit is overwritten on the next sync cycle.
+
+Flux components in use:
+
+| Controller | Role |
+|---|---|
+| `source-controller` | Pulls from Git and Helm repositories, produces versioned artifacts |
+| `kustomize-controller` | Applies Kustomization stacks in dependency order |
+| `helm-controller` | Manages `HelmRelease` CRDs — upgrades, rollbacks, values reconciliation |
+| `notification-controller` | Emits events on reconciliation success/failure |
+
+**Renovate — Automated Dependency PRs**
+
+[Renovate](https://docs.renovatebot.com/) is configured via `renovate.json5` at the repository root. It scans pinned image tags and Helm chart versions across all manifests and opens pull requests automatically when upstream versions are available.
+
+This keeps the cluster current without requiring manual version tracking across dozens of `HelmRelease` and `Deployment` manifests. The workflow is:
+
+```
+Renovate detects new upstream version
+  └─ Opens PR: bump jellyfin:10.9.x → 10.10.x
+       └─ Review + merge PR
+            └─ Flux detects commit, reconciles HelmRelease
+                 └─ Helm upgrade runs in-cluster
+```
+
+No manual image tag hunts. No forgotten stale versions. Renovate surfaces the change; Flux applies it after merge.
+
+**Repository Layout**
+
+All cluster configuration is structured so Flux's Kustomize controller can resolve dependencies in the correct order — CRDs before controllers, controllers before workloads. `SealedSecret` manifests are committed alongside their consuming `Deployment`s; plaintext secrets never appear in the repository.
+
+{{< /tab >}}
 
 {{< tab label="Infrastructure" icon="server" >}}
 
@@ -157,9 +198,9 @@ All secrets follow this flow:
 1. Generate or retrieve credential
 2. Encrypt with `kubeseal` using the controller's public key
 3. Commit `SealedSecret` manifest to Git
-4. Controller decrypts and creates the `Secret` in-cluster
+4. Flux detects the commit and syncs; controller decrypts and creates the `Secret` in-cluster
 
-No plaintext secrets in Git. No manual `kubectl create secret` commands.
+No plaintext secrets in Git. No manual `kubectl create secret` commands. Every secret change has a Git commit as its audit trail.
 
 **TLS Flow**
 
@@ -208,17 +249,19 @@ The full observability pipeline: **Alloy → Loki** for logs, **Prometheus → A
 
 These principles emerged from running this cluster under real conditions:
 
-1. **Namespace isolation is not optional** — one misconfigured deployment should not be able to reach secrets in another namespace.
-2. **Automate TLS end-to-end or suffer cert rot** — cert-manager + reflector eliminates an entire class of silent failures.
-3. **Seal secrets before they touch Git** — retrofitting secret hygiene is painful and leaves audit trail gaps.
-4. **Single ingress controller, one middleware source of truth** — proliferating ingress patterns create inconsistent security postures.
-5. **Build the observability stack first** — deploying Prometheus and Loki before services means every deployment is observable from day one.
-6. **File providers for Traefik middleware** — avoids CRD sprawl and keeps middleware definitions reviewable in a single ConfigMap.
+1. **GitOps is the only sane operational model** — Flux makes drift impossible and every change auditable. Without it, cluster state diverges from documentation faster than documentation gets updated.
+2. **Automate dependency updates or accumulate silent risk** — Renovate surfaces image and chart updates as PRs. Without it, pinned versions go stale and CVEs accumulate unnoticed.
+3. **Namespace isolation is not optional** — one misconfigured deployment should not be able to reach secrets in another namespace.
+4. **Automate TLS end-to-end or suffer cert rot** — cert-manager + reflector eliminates an entire class of silent failures.
+5. **Seal secrets before they touch Git** — retrofitting secret hygiene is painful and leaves audit trail gaps.
+6. **Single ingress controller, one middleware source of truth** — proliferating ingress patterns create inconsistent security postures.
+7. **Build the observability stack first** — deploying Prometheus and Loki before services means every deployment is observable from day one.
+8. **File providers for Traefik middleware** — avoids CRD sprawl and keeps middleware definitions reviewable in a single ConfigMap.
 
 ---
 
 ## Closing Thoughts
 
-This cluster is a continuously operated engineering platform — not a set-and-forget lab. Every component is managed through Git, every secret is sealed, every service terminates TLS from the same wildcard cert, and every log line flows to Loki.
+This cluster is a GitOps-first engineering platform. Flux is the enforcer: the Git repository is the cluster. Renovate keeps the repository current. Every secret is sealed, every service terminates TLS from the same wildcard cert, and every log line flows to Loki.
 
-The objective is not complexity. The objective is **operational clarity under real conditions**.
+The discipline isn't complexity for its own sake — it's what makes a single-node homelab operationally honest: no undocumented state, no forgotten manual changes, no certificates expiring unnoticed. **If it isn't in Git, it doesn't run.**
