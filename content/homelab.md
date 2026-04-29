@@ -19,6 +19,7 @@ A single-node k3s cluster run as a GitOps platform: Flux continuously reconciles
 {{< keyword icon="globe" >}} Traefik Ingress {{< /keyword >}}
 {{< keyword icon="eye" >}} Prometheus + Loki {{< /keyword >}}
 {{< keyword icon="cloud" >}} Cloudflare Tunnel {{< /keyword >}}
+{{< keyword icon="lock" >}} VolSync + Cloudflare R2 {{< /keyword >}}
 {{< /keywordList >}}
 
 {{< figure src="dashboard.png" alt="Homelab dashboard showing infrastructure, networking, and application services" >}}
@@ -54,6 +55,8 @@ The cluster runs on bare-metal on-prem hardware with k3s as the Kubernetes distr
 | Infra dashboard | Portainer | `portainer` |
 | Static site | Caddy | `caddy` |
 | Public tunnel | cloudflared | `cloudflared` |
+| PVC backup | VolSync | `volsync-system` |
+| Backup storage | Cloudflare R2 | *(external — S3-compatible object store)* |
 | Security scanning | Trivy Operator | `trivy-system` |
 | Metrics | Prometheus | `monitoring` |
 | Dashboards | Grafana | `monitoring` |
@@ -125,6 +128,32 @@ Traefik runs in the `traefik` namespace and is the single ingress controller for
 **Public Tunnel — cloudflared**
 
 `cloudflared` in the `cloudflared` namespace creates an outbound-only Cloudflare Tunnel. Public services route through this tunnel — no inbound firewall rules required, no exposed NodePorts. Internal-only services remain behind the IP allowlist middleware and are never reachable externally.
+
+**PVC Backup — VolSync + Cloudflare R2**
+
+[VolSync](https://volsync.readthedocs.io/) runs in the `volsync-system` namespace and handles asynchronous replication of PersistentVolumeClaim data off-cluster. Each stateful workload declares a `ReplicationSource` CRD that schedules periodic Restic snapshots and pushes them to Cloudflare R2 over the S3-compatible API.
+
+All backup data is **encrypted client-side by Restic before leaving the cluster** — Cloudflare R2 stores only ciphertext. The Restic repository password and R2 credentials are stored as `SealedSecret` manifests in Git and injected into the VolSync job pods at runtime.
+
+| Component | Role |
+|---|---|
+| `ReplicationSource` | Per-PVC CRD declaring schedule, retention, and destination |
+| Restic | Deduplicating, encrypting backup engine |
+| Cloudflare R2 | S3-compatible object store receiving the encrypted snapshots |
+| `SealedSecret` | Encrypts R2 access key + Restic repo password at rest in Git |
+
+Backup flow:
+
+```
+VolSync controller (cron schedule fires)
+  └─ spawns Restic job pod
+       └─ mounts source PVC read-only
+            └─ restic backup → encrypts chunks locally
+                 └─ pushes encrypted objects → Cloudflare R2 bucket
+                      └─ prunes old snapshots per retention policy
+```
+
+Retention is configured per `ReplicationSource` — for example, keeping the last 7 daily and 4 weekly snapshots. A corresponding `ReplicationDestination` CRD allows point-in-time restore by pulling a named Restic snapshot back into a fresh PVC.
 
 {{< /tab >}}
 
@@ -257,6 +286,7 @@ These principles emerged from running this cluster under real conditions:
 6. **Single ingress controller, one middleware source of truth** — proliferating ingress patterns create inconsistent security postures.
 7. **Build the observability stack first** — deploying Prometheus and Loki before services means every deployment is observable from day one.
 8. **File providers for Traefik middleware** — avoids CRD sprawl and keeps middleware definitions reviewable in a single ConfigMap.
+9. **Encrypt PVC backups before they leave the cluster** — VolSync with Restic encrypts data client-side; the object store (Cloudflare R2) only ever receives ciphertext. Credentials are sealed in Git alongside everything else — no special-casing for backup secrets.
 
 ---
 
