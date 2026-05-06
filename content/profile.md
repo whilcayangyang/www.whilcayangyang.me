@@ -23,6 +23,8 @@ The disciplines below represent areas where I have delivered real outcomes in pr
 {{< keyword icon="shield" >}} Cybersecurity {{< /keyword >}}
 {{< keyword icon="globe" >}} Networking {{< /keyword >}}
 {{< keyword icon="server" >}} Linux {{< /keyword >}}
+{{< keyword icon="circle-stack" >}} Kubernetes {{< /keyword >}}
+{{< keyword icon="arrow-path" >}} GitOps {{< /keyword >}}
 {{< /keywordList >}}
 
 {{< tabs group="technical-excellence" >}}
@@ -57,6 +59,17 @@ The disciplines below represent areas where I have delivered real outcomes in pr
 | Cybersecurity | Advanced | Operating defense-in-depth controls with SIEM telemetry, detection engineering, and documented incident response processes. |
 | Cloudflare | Advanced | Securing edge delivery with Zero Trust access policies, WAF rule management, DNS governance, and performance optimization. |
 | Threat Modeling & Hardening | Advanced | Leading threat modeling sessions and platform hardening programs to reduce attack surface and enforce measurable secure baselines. |
+
+{{< /tab >}}
+
+{{< tab label="Platform Engineering" icon="circle-stack" >}}
+
+| Capability | Depth | How I Apply It |
+| --- | --- | --- |
+| Kubernetes | Advanced | Running production-grade workloads with namespaced isolation, RBAC least-privilege, resource governance, Helm-managed releases, and operational discipline applied consistently across every service. |
+| Talos Linux | Advanced | Provisioning Kubernetes nodes on an immutable, API-driven OS with no shell access and no manual state — the OS layer is as declarative and reproducible as the cluster above it. |
+| GitOps / Flux CD | Advanced | Enforcing Git as the single source of truth with continuous reconciliation via Flux — no manual `kubectl apply`, no configuration drift, every change traceable to a commit. |
+| Platform Security | Advanced | Layering security across the full stack: encrypted secrets committed to Git via Sealed Secrets, continuous vulnerability and misconfiguration scanning with Trivy Operator, and metrics surfaced to Prometheus for security-posture dashboards in Grafana. |
 
 {{< /tab >}}
 
