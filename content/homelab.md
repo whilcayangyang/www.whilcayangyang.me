@@ -22,9 +22,9 @@ A single-node Talos Linux cluster run as a GitOps platform: Flux continuously re
 {{< keyword icon="lock" >}} VolSync Backup {{< /keyword >}}
 {{< /keywordList >}}
 
-{{< figure src="dashboard.png" alt="Homelab dashboard showing infrastructure, networking, and application services" >}}
+{{< figure src="homepage.png" alt="Homelab dashboard showing infrastructure, networking, and application services" >}}
 
-{{< figure src="k9s.png" alt="k9s terminal UI showing Kubernetes pods across all namespaces" >}}
+{{< figure src="taloslinux.png" alt="k9s terminal UI showing Kubernetes pods across all namespaces" >}}
 
 <div class="mt-4">
 {{< alert icon="circle-info" >}}
