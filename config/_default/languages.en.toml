@@ -17,7 +17,7 @@ copyright = "2026 Whil Cayangyang. All rights reserved."
 [params.author]
 name = "Whil Cayangyang"
 email = "contact@mail.whilcayangyang.me"
-image = "IMG_2023.JPEG"
+image = "profile.jpeg"
 imageQuality = 70
 headline = "Turning bare-metal servers and Kubernetes clusters into resilient, automated, zero-trust infrastructure — where every layer is intentional, observable, and owned."
 bio = "Turning bare-metal servers and Kubernetes clusters into resilient, automated, zero-trust infrastructure — where every layer is intentional, observable, and owned."

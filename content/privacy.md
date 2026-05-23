@@ -1,5 +1,5 @@
 ---
-title: "Privacy Advocacy"
+title: "Why Privacy Is Not Optional: A Practitioner's Case for Digital Autonomy"
 description: "Why internet privacy matters, and practical steps to protect identity, communication, and digital autonomy."
 weight: 50
 showTableOfContents: true

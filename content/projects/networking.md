@@ -1,7 +1,7 @@
 ---
-title: "Country Network Modernization Program"
+title: "Five-Country Network Overhaul: Cisco, Palo Alto, and SOC-Ready Infrastructure"
 description: "Cisco and Palo Alto implementation across five Scholastic Asia sites with segmentation, NAC, SIEM integration, and SOC enablement."
-weight: 21
+weight: 24
 showTableOfContents: true
 draft: false
 ---

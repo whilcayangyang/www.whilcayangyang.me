@@ -1,7 +1,7 @@
 ---
-title: "AWS Implementation & Cost Optimization"
+title: "From Reactive to Governed: AWS Modernization at Enterprise Scale"
 description: "AWS architecture redesign focused on performance, security, governance, and measurable cost efficiency."
-weight: 20
+weight: 21
 showTableOfContents: true
 draft: false
 ---

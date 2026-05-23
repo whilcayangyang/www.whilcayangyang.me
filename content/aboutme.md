@@ -1,5 +1,5 @@
 ---
-title: "About Me"
+title: "Infrastructure Leader — Cloud, Security & DevOps Across APAC"
 description: "Senior DevOps and IT Lead with 10+ years of experience in cloud, infrastructure, networking, and security delivery across enterprise environments."
 weight: 9
 showTableOfContents: true
@@ -7,14 +7,14 @@ draft: false
 ---
 
 {{< lead >}}
-I am a Cloud, DevOps, Networking, and Security Engineer with over a decade of experience delivering secure, scalable, and business-aligned infrastructure across enterprise environments.
+Over a decade of enterprise infrastructure delivery — from field engineering to regional cloud and security leadership across five Asia-Pacific markets, with a consistent focus on outcomes that hold under operational pressure.
 {{< /lead >}}
 
-I currently serve as **Senior IT Officer at Scholastic Asia**, leading regional infrastructure strategy, cloud modernization, and cross-country security and operations programs spanning five Asia-Pacific markets.
+I currently serve as **Senior IT Officer at Scholastic Asia**, leading regional infrastructure strategy, cloud modernization, and cross-country security and operations programs spanning Malaysia, Singapore, India, China, and the Philippines.
 
 ---
 
-## What I Do
+## Disciplines
 
 {{< keywordList >}}
 {{< keyword icon="cloud" >}} Cloud Architecture & AWS {{< /keyword >}}
@@ -27,73 +27,67 @@ I currently serve as **Senior IT Officer at Scholastic Asia**, leading regional 
 {{< keyword icon="server" >}} Hybrid & On-Prem Infrastructure {{< /keyword >}}
 {{< /keywordList >}}
 
+<div class="mt-4">
+{{< alert icon="circle-info" >}}
+**How I work:** Architecture decisions are anchored to business goals, security is enforced by design rather than retrofitted, repeatable operations are automated, and everything critical to long-term maintainability is documented. I measure success by outcomes teams can own and sustain — not by effort or activity.
+{{< /alert >}}
+</div>
+
 ---
 
-## Selected Outcomes
+## The Work
 
-{{< tabs group="outcomes" >}}
+{{< tabs group="work" >}}
 
-{{< tab label="Cloud & DevOps" icon="cloud" >}}
+{{< tab label="Cloud & AWS" icon="cloud" >}}
 
-**AWS Architecture Modernization**
+**AWS Modernization**
 
-Led a platform-wide AWS restructuring initiative, enforcing stronger network segmentation, least-privilege IAM controls, and policy-driven deployment pipelines across the regional infrastructure estate.
+A platform-wide restructuring of Scholastic Asia's AWS environment — network segmentation, least-privilege IAM, and policy-driven deployment pipelines. Infrastructure moved from reactive, ad-hoc operations to a structured, Terraform-backed delivery model with a full audit trail on every change.
 
-**Terraform Pipeline Governance**
+**AWS Resource Migration**
 
-Implemented Terraform-based infrastructure provisioning with integrated pipeline controls, significantly reducing configuration drift and improving the safety and auditability of every infrastructure change.
+End-to-end migration of a business-critical application from deprecated Windows Server EC2 instances to Windows Server 2022 — covering fresh IIS and SQL Server provisioning, security hardening, and a three-environment promotion pipeline with zero unplanned downtime.
 
-**AWS Cost Optimization**
+**Cost Governance**
 
-Drove sustained cost reduction through instance rightsizing, lifecycle policy enforcement, and intelligent storage tiering — delivering measurable savings on recurring AWS operational spend.
+Sustained cost reduction through instance rightsizing, lifecycle policy enforcement, and intelligent storage tiering — delivering measurable savings on recurring AWS operational spend.
 
 {{< /tab >}}
 
 {{< tab label="Network & Security" icon="globe" >}}
 
-**Regional Network Modernization**
+**Five-Country Network Overhaul**
 
-Directed a full network refresh across Malaysia, Singapore, India, China, and the Philippines — unifying architecture standards, segmentation models, and operational tooling across all sites.
-
-**Palo Alto NGFW Migration**
-
-Migrated legacy firewall platforms to Palo Alto Next-Generation Firewalls, standardized IPSEC tunnel configurations, and enforced consistent segmentation and failover resilience across all regions.
-
-**SOC Visibility Integration**
-
-Onboarded infrastructure telemetry into SolarWinds and IBM QRadar, enabling the Security Operations Center with comprehensive network and endpoint visibility for detection and response workflows.
-
-{{< /tab >}}
-
-{{< tab label="Compliance" icon="shield" >}}
+Full network modernization across all five Scholastic Asia locations — Cisco switching, Palo Alto NGFW deployment, FortiNAC for network access control, and SOC-ready telemetry integration into SolarWinds and IBM QRadar.
 
 **CIS Controls v8 Enforcement**
 
-Led CIS Controls v8 implementation across the Asia region, covering cloud, network, identity, and endpoint control domains — establishing a measurable, auditable security baseline organization-wide.
-
-**Access Governance Standardization**
-
-Standardized privileged access governance using TACACS+ with role-based access control, hardening administrative pathways and reducing lateral movement risk across network and infrastructure systems.
-
-**US InfoSEC Audit Readiness**
-
-Compiled and delivered audit-ready evidence packages for US InfoSEC validation cycles and regional compliance assurance, ensuring consistent documentation across all control domains.
-
-{{< /tab >}}
-
-{{< tab label="Platform Migration" icon="server" >}}
+Led enterprise-wide CIS Controls v8 implementation across cloud, network, identity, and endpoint control domains — establishing a measurable, auditable security baseline across the Asia region, with audit-ready evidence packages delivered for US InfoSEC validation.
 
 **88TB Enterprise File Migration**
 
-Led the full migration of 88TB of enterprise content from AWS-hosted Citrix ShareFile StorageZone to Dropbox Business, maintaining uninterrupted production access throughout the transition window.
+Full migration of 88TB of enterprise content from AWS-hosted Citrix ShareFile StorageZone to Dropbox Business — delivered within two months under active production load, with zero data integrity issues.
 
-**Custom Migration Framework**
+{{< /tab >}}
 
-Engineered a PowerShell and REST API-driven migration framework with built-in checkpointing, retry logic, and cryptographic integrity validation — eliminating data loss risk at scale.
+{{< tab label="Homelab" icon="circle-stack" >}}
 
-**On-Time Delivery Under Load**
+**GitOps-Driven Kubernetes**
 
-Completed the full 88TB migration under active production load within a two-month timeline, with zero reported data integrity issues and no service continuity impact to end users.
+A single-node Talos Linux cluster running as a production-discipline platform: Flux continuously reconciles all cluster state from Git, sealed secrets committed to the repository, wildcard TLS automated via cert-manager, and a unified Prometheus/Loki/Grafana observability stack covering the full stack.
+
+The homelab is where patterns are validated before they reach enterprise infrastructure — GitOps workflows, security controls, and operational runbooks are tested here first.
+
+{{< /tab >}}
+
+{{< tab label="Privacy" icon="shield" >}}
+
+**Digital Privacy as Practice**
+
+Privacy is not a product or a setting — it is an operational discipline applied consistently across tooling, communication, and infrastructure choices. The same principles that govern enterprise security posture apply to personal digital hygiene: least-privilege access, minimal data exposure, and deliberate control over identity and communication channels.
+
+The Privacy Advocacy page covers the reasoning, the tools, and the practical steps in detail.
 
 {{< /tab >}}
 
@@ -101,21 +95,64 @@ Completed the full 88TB migration under active production load within a two-mont
 
 ---
 
-## How I Lead
+## Operating Principles
 
-{{< alert icon="circle-info" >}}
-**Align. Secure. Automate. Document.**
-
-I operate with a practical four-part model: architecture decisions are anchored to business goals, security is enforced by design rather than retrofitted, repeatable operations are automated to reduce human error, and everything critical to long-term maintainability is documented. I measure success by outcomes teams can own and sustain — not by effort or activity.
-{{< /alert >}}
+| Principle | Application |
+|-----------|-------------|
+| Security by design | Controls are built into architecture from the start — not layered on after the fact |
+| Code over console | Every infrastructure change goes through a pipeline — no undocumented manual state |
+| Documentation as a deliverable | Runbooks, architecture diagrams, and procedures are part of the work, not an afterthought |
+| Outcomes over activity | Success is measured by what the team can own and sustain, not by hours or deliverables shipped |
 
 ---
 
-## What I'm Building Toward
+## Professional Journey
 
-{{< keywordList >}}
-{{< keyword icon="chart-bar" >}} Cloud governance & cost intelligence {{< /keyword >}}
-{{< keyword icon="shield" >}} Security engineering & defense-in-depth {{< /keyword >}}
-{{< keyword icon="cog" >}} Infrastructure automation & observability {{< /keyword >}}
-{{< keyword icon="server" >}} Hybrid architecture patterns {{< /keyword >}}
-{{< /keywordList >}}
+{{< lead >}}
+Each role below built on the last — from hands-on field engineering to enterprise-scale infrastructure leadership across cloud, networking, and security.
+{{< /lead >}}
+
+{{< timeline >}}
+
+{{< timelineItem icon="cloud" header="Senior IT Officer" subheader="Scholastic Asia" badge="2021 – Present" md="true" >}}
+Leading regional IT infrastructure across five Asia-Pacific markets, with accountability for cloud architecture, security posture, and operational continuity at enterprise scale.
+
+- Architect and maintain AWS environments with security, resilience, and cost governance as core design principles.
+- Direct cross-country network modernization, firewall migration, and SOC enablement programs.
+- Drive CIS Controls v8 enforcement and deliver audit-ready compliance evidence for US InfoSEC validation.
+- Lead major migrations and infrastructure transitions under active production load with zero service impact.
+{{< /timelineItem >}}
+
+{{< timelineItem icon="eye" header="IT Manager / System Integrator" subheader="PilotTV Philippines" badge="2019 – 2021" md="true" >}}
+Shaped long-term IT strategy and unified a fragmented technology environment into a coherent, interoperable platform aligned to business operations.
+
+- Assessed infrastructure maturity and planned future-state capabilities across the organization.
+- Integrated disparate systems and applications to eliminate operational silos and improve reliability.
+- Managed end-to-end integration projects from requirements through delivery, on scope and on schedule.
+{{< /timelineItem >}}
+
+{{< timelineItem icon="list-check" header="IT Specialist" subheader="FocusMedia Audiovisual Inc." badge="2016 – 2019" md="true" >}}
+Owned day-to-day IT operations, maintaining endpoint performance, security compliance, and user account governance across the organization.
+
+- Delivered technical support across hardware and software installation, configuration, and fault resolution.
+- Administered user account lifecycle controls aligned with security policy and access governance standards.
+- Managed software rollouts and system updates to sustain endpoint consistency and operational uptime.
+{{< /timelineItem >}}
+
+{{< timelineItem icon="globe" header="IT Field Engineer" subheader="eMechanics Computer & Peripherals Inc." badge="2014 – 2016" md="true" >}}
+Delivered on-site technical execution for mission-critical deployments across financial services infrastructure, where precision and uptime were non-negotiable.
+
+- Installed, configured, and network-integrated ATM and POS platforms at client sites nationwide.
+- Executed preventive maintenance and system updates to maximize reliability and minimize service disruption.
+- Coordinated with technical teams to triage and resolve field incidents within SLA windows.
+{{< /timelineItem >}}
+
+{{< timelineItem icon="microsoft" header="Remote Desktop Specialist" subheader="Accenture" badge="2013" md="true" >}}
+Provided enterprise-grade remote technical support, building early foundations in structured problem-solving, security response, and end-user communication under pressure.
+
+- Resolved complex software issues remotely, reducing end-user downtime and escalation rates.
+- Detected, removed, and remediated malware and cybersecurity threats across managed endpoints.
+- Optimized system performance and stability through targeted diagnostics and tuning protocols.
+{{< /timelineItem >}}
+
+{{< /timeline >}}

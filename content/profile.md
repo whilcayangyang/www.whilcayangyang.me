@@ -1,5 +1,5 @@
 ---
-title: "Technical Excellence & Professional Journey"
+title: "A Decade of Enterprise Infrastructure Delivery"
 description: "Core technologies and operational disciplines behind a decade of delivering secure, scalable, and business-aligned IT operations across enterprise environments."
 weight: 10
 showTableOfContents: true

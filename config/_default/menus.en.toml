@@ -25,36 +25,42 @@ name = "Projects"
 weight = 20
 
 [[main]]
-name = "Cloud Optimization"
+name = "AWS Modernization"
 parent = "Projects"
 pageRef = "aws-cloud"
 weight = 21
 
 [[main]]
-name = "Networking"
+name = "88TB AWS Migration"
 parent = "Projects"
-pageRef = "networking"
+pageRef = "platform-migration"
 weight = 22
 
 [[main]]
-name = "Platform Migration"
+name = "AWS Resource Migration"
 parent = "Projects"
-pageRef = "platform-migration"
+pageRef = "app-migration"
 weight = 23
 
 [[main]]
-name = "Center for Internet Security (CIS)"
+name = "Network Architecture"
 parent = "Projects"
-pageRef = "cis"
+pageRef = "networking"
 weight = 24
 
 [[main]]
-name = "K8s Homelab"
+name = "CIS Controls"
+parent = "Projects"
+pageRef = "cis"
+weight = 25
+
+[[main]]
+name = "Kubernetes"
 pageRef = "homelab"
 weight = 30
 
 [[main]]
-name = "Privacy"
+name = "Privacy Advocacy"
 pageRef = "privacy"
 weight = 40
 

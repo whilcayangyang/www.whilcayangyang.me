@@ -1,5 +1,5 @@
 ---
-title: "On-Prem Kubernetes Homelab"
+title: "Homelab as a Platform: GitOps-Driven Kubernetes with Production Discipline"
 description: "GitOps-driven Talos Linux cluster: Flux reconciles all state from Git, with sealed secrets, wildcard TLS, MetalLB load balancing, and a full Prometheus/Loki/Grafana observability stack."
 weight: 40
 showTableOfContents: true
