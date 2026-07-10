@@ -10,7 +10,7 @@ draft: false
 Over a decade of enterprise infrastructure delivery — from field engineering to regional cloud and security leadership across five Asia-Pacific markets, with a consistent focus on outcomes that hold under operational pressure.
 {{< /lead >}}
 
-I currently serve as **Senior IT Officer at Scholastic Asia**, leading regional infrastructure strategy, cloud modernization, and cross-country security and operations programs spanning Malaysia, Singapore, India, China, and the Philippines.
+I currently serve as **Senior IT Executive - Enterprise System and Security at Scholastic Asia**, owning enterprise infrastructure and cloud administration, cybersecurity posture, and vendor relationships across the organization's technology landscape.
 
 ---
 
@@ -114,7 +114,16 @@ Each role below built on the last — from hands-on field engineering to enterpr
 
 {{< timeline >}}
 
-{{< timelineItem icon="cloud" header="Senior IT Officer" subheader="Scholastic Asia" badge="2021 – Present" md="true" >}}
+{{< timelineItem icon="shield" header="Senior IT Executive - Enterprise System and Security" subheader="Scholastic Asia" badge="Jun 2026 – Present" md="true" >}}
+Own end-to-end administration, maintenance, and continuous improvement of enterprise IT infrastructure and cloud environments, ensuring reliability, scalability, and security across the organization's technology landscape.
+
+- Drive cybersecurity posture through proactive risk management, compliance initiatives, and security hardening of on-premises and cloud systems.
+- Act as a hands-on technical anchor across infrastructure, security, and enterprise systems, bridging strategic vendor coordination with direct operational execution.
+- Serve as the primary technical point of contact between the organization and critical business application vendors, managing relationships and ensuring smooth cross-functional alignment on system performance, upgrades, and integrations.
+- Recognized as a trusted senior individual contributor leading high-impact initiatives independently.
+{{< /timelineItem >}}
+
+{{< timelineItem icon="cloud" header="Senior IT Officer" subheader="Scholastic Asia" badge="2021 – Jun 2026" md="true" >}}
 Leading regional IT infrastructure across five Asia-Pacific markets, with accountability for cloud architecture, security posture, and operational continuity at enterprise scale.
 
 - Architect and maintain AWS environments with security, resilience, and cost governance as core design principles.
@@ -126,9 +135,10 @@ Leading regional IT infrastructure across five Asia-Pacific markets, with accoun
 {{< timelineItem icon="eye" header="IT Manager / System Integrator" subheader="PilotTV Philippines" badge="2019 – 2021" md="true" >}}
 Shaped long-term IT strategy and unified a fragmented technology environment into a coherent, interoperable platform aligned to business operations.
 
-- Assessed infrastructure maturity and planned future-state capabilities across the organization.
-- Integrated disparate systems and applications to eliminate operational silos and improve reliability.
-- Managed end-to-end integration projects from requirements through delivery, on scope and on schedule.
+- Maintained operational continuity for 200+ on-site devices through continuous cloud-based monitoring.
+- Established SOPs and enforced third-party SLAs to govern IT team operations and vendor service quality.
+- Led major IT initiatives — migrations, installations, and upgrades — owning scope, timelines, and resourcing.
+- Kept asset records and tested backup inventory current for rapid device replacement, and drove adoption of new systems through user training programs.
 {{< /timelineItem >}}
 
 {{< timelineItem icon="list-check" header="IT Specialist" subheader="FocusMedia Audiovisual Inc." badge="2016 – 2019" md="true" >}}
@@ -140,11 +150,12 @@ Owned day-to-day IT operations, maintaining endpoint performance, security compl
 {{< /timelineItem >}}
 
 {{< timelineItem icon="globe" header="IT Field Engineer" subheader="eMechanics Computer & Peripherals Inc." badge="2014 – 2016" md="true" >}}
-Delivered on-site technical execution for mission-critical deployments across financial services infrastructure, where precision and uptime were non-negotiable.
+Delivered multi-client technical field support for Diebold Nixdorf and McDonald's projects, executing mission-critical deployments across financial services infrastructure where precision and uptime were non-negotiable.
 
-- Installed, configured, and network-integrated ATM and POS platforms at client sites nationwide.
-- Executed preventive maintenance and system updates to maximize reliability and minimize service disruption.
-- Coordinated with technical teams to triage and resolve field incidents within SLA windows.
+- Executed large-scale OS imaging and cloning for Wincor Nixdorf ATM and Panasonic POS deployments, including centralized POS and biometric data collection setups.
+- Secured and maintained Wincor Nixdorf ATM fleets through security patching, software updates, and network configuration.
+- Provided Level 2 hardware/software troubleshooting — resolving BSOD, application, and hardware failures with minimal downtime.
+- Conducted network troubleshooting and cabling across sites supporting major banks (BPI, RCBC) and the McDonald's branch network.
 {{< /timelineItem >}}
 
 {{< timelineItem icon="microsoft" header="Remote Desktop Specialist" subheader="Accenture" badge="2013" md="true" >}}
