@@ -175,10 +175,10 @@ The following services are aligned with a privacy-first operating model and are 
     </div>
   </div>
   <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
-    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/librewolf.svg" alt="LibreWolf icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/brave.svg" alt="Brave icon" width="20" height="20" style="margin-top: 0.15rem;">
     <div>
-      <a href="https://librewolf.net/" style="font-weight: 600;">LibreWolf</a>
-      <div style="margin-top: 0.15rem;">Privacy-hardened Firefox fork with stronger defaults, reduced telemetry, and no proprietary dependencies.</div>
+      <a href="https://brave.com/" style="font-weight: 600;">Brave Browser</a>
+      <div style="margin-top: 0.15rem;">Chromium-based browser with built-in ad and tracker blocking, fingerprinting protection, and privacy-respecting defaults.</div>
     </div>
   </div>
 </div>
