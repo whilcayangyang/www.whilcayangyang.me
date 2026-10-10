@@ -1,0 +1,50 @@
+/* Image zoom is enabled site-wide (disableImageZoom = false); only the homelab
+   screenshots should open. Theme-rendered images can't take the .nozoom class
+   without overriding theme partials, so make them non-clickable instead. */
+img[alt="Whil Cayangyang"],
+img#background-image {
+  pointer-events: none;
+}
+
+/* Homepage "Not just hosted" badges: 2x2 grid below lg, single non-wrapping row from lg up */
+.site-badges {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem 0.75rem;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
+.site-badges > span:not(.site-badges-sep) {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.site-badges img {
+  flex: none;
+  margin: 0;
+}
+
+.site-badges-sep {
+  display: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+}
+
+@media (min-width: 1024px) {
+  .site-badges {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .site-badges > span:not(.site-badges-sep) {
+    white-space: nowrap;
+  }
+
+  .site-badges-sep {
+    display: inline;
+  }
+}

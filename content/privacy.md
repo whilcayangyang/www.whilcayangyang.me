@@ -133,49 +133,49 @@ The following services are aligned with a privacy-first operating model and are 
 
 <div style="display: grid; gap: 0.9rem; margin: 1rem 0;">
   <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
-    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/proton.svg" alt="Proton icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <img class="nozoom" src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/proton.svg" alt="Proton icon" width="20" height="20" style="margin-top: 0.15rem;">
     <div>
       <a href="https://pr.tn/ref/F2BW3G4P" style="font-weight: 600;">Proton</a>
       <div style="margin-top: 0.15rem;">Encrypted email, VPN, password management, and secure cloud storage — all under a zero-knowledge architecture.</div>
     </div>
   </div>
   <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
-    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/simplelogin.svg" alt="SimpleLogin icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <img class="nozoom" src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/simplelogin.svg" alt="SimpleLogin icon" width="20" height="20" style="margin-top: 0.15rem;">
     <div>
       <a href="https://simplelogin.io/" style="font-weight: 600;">SimpleLogin</a>
       <div style="margin-top: 0.15rem;">Email aliasing that protects your real inbox identity from exposure, spam, and data broker harvesting.</div>
     </div>
   </div>
   <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
-    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/vaultwarden.svg" alt="Vaultwarden icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <img class="nozoom" src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/vaultwarden.svg" alt="Vaultwarden icon" width="20" height="20" style="margin-top: 0.15rem;">
     <div>
       <a href="https://github.com/dani-garcia/vaultwarden" style="font-weight: 600;">Vaultwarden</a>
       <div style="margin-top: 0.15rem;">Lightweight, self-hosted Bitwarden-compatible password manager. Full control, no third-party dependency.</div>
     </div>
   </div>
   <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
-    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/pi-hole.svg" alt="Pi-hole icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <img class="nozoom" src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/pi-hole.svg" alt="Pi-hole icon" width="20" height="20" style="margin-top: 0.15rem;">
     <div>
       <a href="https://github.com/pi-hole/pi-hole" style="font-weight: 600;">Pi-hole</a>
       <div style="margin-top: 0.15rem;">Network-wide DNS filtering that blocks ads, trackers, and malicious domains before they reach any device.</div>
     </div>
   </div>
   <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
-    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/mikrotik.svg" alt="MikroTik icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <img class="nozoom" src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/mikrotik.svg" alt="MikroTik icon" width="20" height="20" style="margin-top: 0.15rem;">
     <div>
       <a href="https://mikrotik.com/" style="font-weight: 600;">MikroTik</a>
       <div style="margin-top: 0.15rem;">Powerful, flexible network hardware enabling enterprise-grade segmentation, firewall policy, and access control at home.</div>
     </div>
   </div>
   <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
-    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/fedora.svg" alt="Fedora icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <img class="nozoom" src="https://cdn.jsdelivr.net/gh/selfhst/icons/svg/fedora.svg" alt="Fedora icon" width="20" height="20" style="margin-top: 0.15rem;">
     <div>
       <a href="https://fedoraproject.org/" style="font-weight: 600;">Fedora</a>
       <div style="margin-top: 0.15rem;">Open-source Linux platform with a strong security posture, transparent development, and no vendor lock-in.</div>
     </div>
   </div>
   <div style="display: grid; grid-template-columns: 1.5rem 1fr; gap: 0.7rem; align-items: start;">
-    <img src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/brave.svg" alt="Brave icon" width="20" height="20" style="margin-top: 0.15rem;">
+    <img class="nozoom" src="https://cdn.jsdelivr.net/gh/selfhst/icons@main/svg/brave.svg" alt="Brave icon" width="20" height="20" style="margin-top: 0.15rem;">
     <div>
       <a href="https://brave.com/" style="font-weight: 600;">Brave Browser</a>
       <div style="margin-top: 0.15rem;">Chromium-based browser with built-in ad and tracker blocking, fingerprinting protection, and privacy-respecting defaults.</div>

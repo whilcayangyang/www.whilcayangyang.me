@@ -23,6 +23,7 @@ replyByEmail = false
 disableImageOptimization = false
 disableImageOptimizationMD = false
 disableTextInHeader = false
+disableImageZoom = false
 # backgroundImageWidth = 1200
 
 defaultBackgroundImage = "background.svg" # used as default for background images
